@@ -1,35 +1,43 @@
-from flask import Flask, request
-from flask_cors import CORS
-from spreadsheet import spreadsheet_to_json
-
-
-ALLOWED_EXTENSIONS = {"xlsx", "xls"}
+from flask import Flask, request, send_file
+from flask_cors import CORS, cross_origin
+from spreadsheet import (
+    csv_to_excel_conversion,
+    excel_to_csv_conversion,
+    excel_to_json_conversion,
+    json_to_spreadsheet,
+)
+import json
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
+cors = CORS(app)
 
 
-@app.route("/", methods=["GET", "POST"])
-def upload_file():
-    if request.method == "POST":
-        print(request.files["file"])
-        f = request.files["file"]
-        if allowed_file(f.filename):
-            try:
-                return spreadsheet_to_json(f)
-            except:
-                return "unknow error, verify your file and try again"
-        else:
-            return "invalid file"
+@app.route("/excel-to-json", methods=["POST"])
+def excel_to_json():
+    return excel_to_json_conversion(request.files["file"])
 
 
-@app.route("/export", methods=["GET"])
-def export_records():
-    return
+@app.route("/excel-to-csv", methods=["POST"])
+def excel_to_csv():
+    return excel_to_csv_conversion(request)
 
 
-def allowed_file(filename):
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+@app.route("/csv-to-excel", methods=["POST"])
+def csv_to_excel():
+    return csv_to_excel_conversion(request)
+
+
+# TODO imrprove result
+@app.route("/json-to-excel", methods=["POST"])
+def json_to_excel():
+    req = request.get_json()
+    obj = json.loads(req)
+    return send_file(
+        json_to_spreadsheet(obj),
+        attachment_filename="result.xlsx",
+        as_attachment=True,
+    )
 
 
 if __name__ == "__main__":

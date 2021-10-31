@@ -1,13 +1,12 @@
-
 class Header extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <nav
       class="navbar navbar-expand-sm navbar-light"
       style="background-color: #c4c6cb"
     >
       <div class="container-fluid">
-        <!--<a class="navbar-brand" href="#">Ztools</a>-->
+        <!--<a class="navbar-brand" href="#">Go Tools</a>-->
         <button
           class="navbar-toggler"
           type="button"
@@ -37,13 +36,18 @@ class Header extends HTMLElement {
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#">Spreadsheet to Json</a>
+                  <a class="dropdown-item" href="excel-to-json.html">Excel to Json</a>
+                </li>
+                <!--
+                <li>
+                  <a class="dropdown-item" href="json-to-excel.html">Json to Excel</a>
+                </li>
+                -->
+                <li>
+                  <a class="dropdown-item" href="excel-to-csv.html">Excel to CSV</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Json to Spreadsheet</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Spreadsheet to csv</a>
+                  <a class="dropdown-item" href="csv-to-excel.html">CSV to Excel</a>
                 </li>
               </ul>
             </li>
@@ -106,12 +110,38 @@ class Header extends HTMLElement {
     <!-- Header-->
     <header style="background-color: #c4c6cb">
       <div class="container px-4 text-center">
-        <h1 class="fw-bolder">Ztools</h1>
+        <h1 class="fw-bolder"><span class="text-danger">Go</span><span class="text-dark">Tools</span></h1>
         <p class="lead">Everything you need in one place</p>
         <br />
       </div>
     </header>
       `;
-    }
   }
+}
 
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <footer class="py-5 bg-dark fixed-bottom">
+    <div class="container px-4">
+      <p class="m-0 text-center text-white">
+        Copyright &copy; Your Website 2021
+      </p>
+    </div>
+  </footer>
+    `;
+  }
+}
+
+class Spinner extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+        <section id="spinner-section" style="display: none">
+            <button class="btn btn-secondary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+            </button>
+        </section>
+      `;
+  }
+}

@@ -28,16 +28,33 @@
               margin-top: 50px;
               margin-bottom: 50px;
             ">
-          <div class="container">
-            <div class="row justify-content-center">
-              <h2>Json to Excel Converter</h2>
-
-              <textarea name="jsonToExcelTextArea" id="jsonToExcelTextArea" cols="30" rows="10"></textarea>
-              <div>
+          <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+              <div class="col-lg-8">
+                <h2>Excel To Json Converter</h2>
                 <br />
-                <spinner-section></spinner-section>
-                <button class="btn btn-secondary" type="button" onclick="convertJsonToExcel()">Send</button>
+                <!--<label for="formFileMultiple" class="form-label">Hold ctrl to select multiple files</label> -->
+                <div class="mb-3">
+                  <input type="file" id="fileupload" name="fileupload" class="form-control" />
+                  <br />
+                  <button class="btn btn-outline-secondary" onclick="uploadFile()">
+                    Upload
+                  </button>
+                </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <spinner-section></spinner-section>
+        <section id="result" class="bg-light" style="margin-top: 50px; margin-bottom: 50px">
+          <div id="spreadsheetToJsonResult" class="container" style="display: none">
+            <div>
+              <button class="btn btn-outline-secondary" onclick="spreadsheetToJsonResultCopyBtn()">
+                copy to clipboard
+              </button>
+              <br />
+              <textarea id="spreadsheetToJsonResultTextArea" rows="20" cols="80">
+                </textarea>
             </div>
           </div>
         </section>
@@ -53,8 +70,7 @@
 
   <!-- <footer-section></footer-section> -->
 
-  <script src="reusable-html/header.js"></script>
-  <script src="reusable-html/spinner.js"></script>
+  <script src="reusable-html/common.js"></script>
   <script>
     customElements.define("main-header", Header);
     customElements.define("spinner-section", Spinner);
@@ -65,7 +81,7 @@
     crossorigin="anonymous"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
-  <script src="js/json_to_excel.js"></script>
+  <script src="js/excel_to_json.js"></script>
 </body>
 
 </html>
