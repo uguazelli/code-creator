@@ -8,6 +8,8 @@ from spreadsheet import (
 )
 import json
 
+from tesseract import image_to_text_conversion
+
 app = Flask(__name__)
 
 cors = CORS(app)
@@ -26,6 +28,11 @@ def excel_to_csv():
 @app.route("/csv-to-excel", methods=["POST"])
 def csv_to_excel():
     return csv_to_excel_conversion(request)
+
+
+@app.route("/image-to-text", methods=["POST"])
+def image_to_text():
+    return image_to_text_conversion(request)
 
 
 # TODO imrprove result

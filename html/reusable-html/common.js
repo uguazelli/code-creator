@@ -51,6 +51,28 @@ class Header extends HTMLElement {
                 </li>
               </ul>
             </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                OCR
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="image-to-text.html">Image to Text</a>
+                </li>
+              </ul>
+            </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -61,32 +83,6 @@ class Header extends HTMLElement {
                 aria-expanded="false"
               >
                 PDF
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="navbarDarkDropdownMenuLink"
-              >
-                <li>
-                  <a class="dropdown-item" href="#">Spreadsheet to Json</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Json to Spreadsheet</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Spreadsheet to csv</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDarkDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                ORC
               </a>
               <ul
                 class="dropdown-menu dropdown-menu-dark"
