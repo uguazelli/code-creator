@@ -89,13 +89,13 @@ class Header extends HTMLElement {
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#">Spreadsheet to Json</a>
+                  <a class="dropdown-item" href="pdf-split.html">Split PDF</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Json to Spreadsheet</a>
+                  <a class="dropdown-item" href="pdf-join.html">Join PDF</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Spreadsheet to csv</a>
+                  <a class="dropdown-item" href="pdf-to-text.html">PDF to text</a>
                 </li>
               </ul>
             </li>

@@ -1,13 +1,13 @@
 from PIL import Image
 import pytesseract
 from flask import send_file
-from util import unique_name
+from util import unique_name_path
 
 
 def image_to_text_conversion(request):
 
-    f = request.files["file"]
-    path = unique_name(f.filename)
+    f = request.files["file0"]
+    path = unique_name_path(f.filename)
     f.save(path)
     result_file = open("result.txt", "w")
     try:

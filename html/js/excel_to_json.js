@@ -1,7 +1,7 @@
 async function uploadFile() {
   document.getElementById("spinner-section").style.display = "block";
   let formData = new FormData();
-  formData.append("file", fileupload.files[0]);
+  formData.append("file0", fileupload.files[0]);
 
   await fetch("http://localhost:5000/excel-to-json", {
     method: "POST",
