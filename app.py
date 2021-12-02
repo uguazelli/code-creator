@@ -1,14 +1,17 @@
-import os, time, json
-from flask import Flask, request, send_file
-from flask_cors import CORS, cross_origin
-from pdf import *
-from tesseract import image_to_text_conversion
-from spreadsheet import *
+import os, time
+from flask import Flask
+from flask_cors import CORS
+from pdf import pdf
+from tesseract import tesseract
+from excel import excel
 
 PROJECT_ROOT = os.path.dirname(__file__)
 TEMP_DIR = os.path.join(PROJECT_ROOT, "tmp")
 
 app = Flask(__name__)
+app.register_blueprint(excel)
+app.register_blueprint(pdf)
+app.register_blueprint(tesseract)
 
 cors = CORS(app)
 
@@ -21,42 +24,6 @@ def clean_temp():
         filecompare = now - 60
         if filestamp < filecompare:
             os.remove(os.path.join(TEMP_DIR, filename))
-
-
-@app.route("/excel-to-json", methods=["POST"])
-def excel_to_json():
-    return excel_to_json_conversion(request)
-
-
-@app.route("/excel-to-csv", methods=["POST"])
-def excel_to_csv():
-    return excel_to_csv_conversion(request)
-
-
-@app.route("/csv-to-excel", methods=["POST"])
-def csv_to_excel():
-    return csv_to_excel_conversion(request)
-
-
-@app.route("/image-to-text", methods=["POST"])
-def image_to_text():
-    return image_to_text_conversion(request)
-
-
-@app.route("/pdf-split", methods=["POST"])
-def pdf_split():
-    return split_pdf_helper(request)
-
-
-@app.route("/pdf-join", methods=["POST"])
-def pdf_join():
-    return join_pdf_helper(request)
-
-
-# TODO imrprove result
-@app.route("/json-to-excel", methods=["POST"])
-def json_to_excel():
-    return json_to_excel_conversion(request)
 
 
 if __name__ == "__main__":

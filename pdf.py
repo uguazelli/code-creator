@@ -1,16 +1,19 @@
 import uuid
-
+from flask import Blueprint, request
 from flask.helpers import send_file
 from util import unique_name_path
 from PyPDF2 import PdfFileWriter, PdfFileReader, PdfFileMerger
 import os
 from zipfile import ZipFile
 
+pdf = Blueprint('pdf','__name__')
+
 PROJECT_ROOT = os.path.dirname(__file__)
 TEMP_DIR = os.path.join(PROJECT_ROOT, "tmp")
 
 
-def split_pdf_helper(request):
+@pdf.route("/pdf-split", methods=["POST"])
+def split_pdf_helper():
     f = request.files["file0"]
     path = unique_name_path(f.filename)
     f.save(path)
@@ -39,7 +42,8 @@ def split_pdf_helper(request):
     return send_file(zip_path, as_attachment=True)
 
 
-def join_pdf_helper(request):
+@pdf.route("/pdf-join", methods=["POST"])
+def join_pdf_helper():
     output = PdfFileMerger()
     number_of_pages = len(request.files)
     for index in range(number_of_pages):

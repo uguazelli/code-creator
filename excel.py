@@ -2,12 +2,13 @@ import json
 from openpyxl import load_workbook
 import pandas as pd
 from io import BytesIO
-from flask import current_app, send_file
+from flask import Blueprint, send_file, request
 from util import generate_in_memory, unique_name_path
-import os
 
+excel = Blueprint('excel','__name__')
 
-def excel_to_json_conversion(request):
+@excel.route("/excel-to-json", methods=["POST"])
+def excel_to_json_conversion():
     result = {}
     wb = load_workbook(filename=request.files["file0"])
 
@@ -30,8 +31,8 @@ def excel_to_json_conversion(request):
 
     return result
 
-
-def json_to_excel_conversion(request):
+@excel.route("/json-to-excel", methods=["POST"])
+def json_to_excel_conversion():
     req = request.get_json()
     obj = json.loads(req)
     df = pd.json_normalize(obj)
@@ -52,8 +53,8 @@ def json_to_excel_conversion(request):
     return output
     send_file(output, attachment_filename="result.xlsx", as_attachment=True)
 
-
-def excel_to_csv_conversion(request):
+@excel.route("/excel-to-csv", methods=["POST"])
+def excel_to_csv_conversion():
     f = request.files["file0"]
     path = unique_name_path(f.filename)
     new_path = path.replace(".xlsx", ".csv")
@@ -62,8 +63,8 @@ def excel_to_csv_conversion(request):
     read_file.to_csv(new_path, index=None, header=True)
     return send_file(new_path, as_attachment=True)
 
-
-def csv_to_excel_conversion(request):
+@excel.route("/csv-to-excel", methods=["POST"])
+def csv_to_excel_conversion():
     f = request.files["file0"]
     path = unique_name_path(f.filename)
     new_path = path.replace(".csv", ".xlsx")
