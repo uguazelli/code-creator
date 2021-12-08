@@ -1,20 +1,23 @@
 import os, time
-from flask import Flask
+from waitress import serve
+from flask import Flask, render_template
 from flask_cors import CORS
-from pdf import pdf
-from tesseract import tesseract
-from excel import excel
+from app_pdf import app_pdf
+from app_tesseract import app_tesseract
+from app_excel import app_excel
+from app_qr import app_qr
+
 
 PROJECT_ROOT = os.path.dirname(__file__)
 TEMP_DIR = os.path.join(PROJECT_ROOT, "tmp")
 
 app = Flask(__name__)
-app.register_blueprint(excel)
-app.register_blueprint(pdf)
-app.register_blueprint(tesseract)
+app.register_blueprint(app_excel)
+app.register_blueprint(app_pdf)
+app.register_blueprint(app_tesseract)
+app.register_blueprint(app_qr)
 
 cors = CORS(app)
-
 
 @app.before_request
 def clean_temp():
@@ -25,6 +28,11 @@ def clean_temp():
         if filestamp < filecompare:
             os.remove(os.path.join(TEMP_DIR, filename))
 
+@app.route("/")
+def test():
+    return render_template('index.html')
+
 
 if __name__ == "__main__":
-    app.run(threaded=True)
+    #app.run(host='0.0.0.0', port=5000, debug=True)
+    serve(app, host='0.0.0.0', port=5000)

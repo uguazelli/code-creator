@@ -16,52 +16,48 @@
 
 <body id="page-top" style="background-color: #e1e3e7">
     <!-- Navigation-->
-    <main-header></main-header>
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #c4c6cb">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="#">Go Tools</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            {% include 'common/top-menu.html' %}
+        </div>
+    </nav>
+    <!-- Header-->
+    <header style="background-color: #c4c6cb">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bolder">
+                <span class="text-danger">Go</span><span class="text-dark">Tools</span>
+            </h1>
+            <p class="lead">Everything you need in one place</p>
+            <br />
+        </div>
+    </header>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <!-- Services section-->
-                <section class="bg-light" style="
-              padding-top: 50px;
-              padding-bottom: 50px;
-              margin-top: 50px;
-              margin-bottom: 50px;
-            ">
-                    <div class="container px-4">
-                        <div class="row gx-4 justify-content-center">
-                            <div class="col-lg-8">
 
-                                <br />
-                                <h3>Select an option from top menu</h3>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            {% block main %}{% endblock %}
 
-            </div>
             <div id="publicity-section" class="col-sm-4 publicity-section"
                 style="margin-top: 50px; margin-bottom: 50px">
-                <div id="publicity-fixed" class="position-fixed">
-
-                </div>
+                <div id="publicity-fixed" class="position-fixed"></div>
             </div>
         </div>
     </div>
 
-
-
-    <script src="reusable-html/common.js"></script>
-    <script>
-        customElements.define("main-header", Header);
-    </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script src="js/excel_to_json.js"></script>
+
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6811805402881862"
         crossorigin="anonymous"></script>
 </body>

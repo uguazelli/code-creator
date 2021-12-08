@@ -1,4 +1,4 @@
-async function convertJsonToExcel() {
+async function uploadFile() {
   var spinner = document.getElementById("spinner-section");
   spinner.style.display = "block";
 

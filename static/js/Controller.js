@@ -3,10 +3,12 @@ async function uploadFile(action) {
   document.getElementById("spinner-section").style.display = "block";
 
   let form = document.getElementById("fileupload");
+  let textUpload = document.getElementById("textUpload").value;
   let formData = new FormData();
 
   for (let i = 0; i < form.files.length; i++) {
     formData.append("file" + i, form.files[i]);
+    formData.append("text", textUpload)
   }
 
   await fetch(params.url, {
@@ -52,6 +54,16 @@ function fetchParameters(action) {
       return {
         url: "http://localhost:5000/image-to-text",
         downloadName: "result.txt",
+      };
+    case "pdfToText":
+      return {
+        url: "http://localhost:5000/pdf-to-text",
+        downloadName: "result.txt",
+      };
+      case "qrGenerator":
+        return {
+          url: "http://localhost:5000/qr-generator",
+          downloadName: "result.jpg",
       };
   }
 }
