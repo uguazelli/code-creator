@@ -3,7 +3,7 @@ from waitress import serve
 from flask import Flask, render_template
 from flask_cors import CORS
 from app_pdf import app_pdf
-from app_tesseract import app_tesseract
+from app_ocr import app_ocr
 from app_excel import app_excel
 from app_qr import app_qr
 
@@ -14,7 +14,7 @@ TEMP_DIR = os.path.join(PROJECT_ROOT, "tmp")
 app = Flask(__name__)
 app.register_blueprint(app_excel)
 app.register_blueprint(app_pdf)
-app.register_blueprint(app_tesseract)
+app.register_blueprint(app_ocr)
 app.register_blueprint(app_qr)
 
 cors = CORS(app)
@@ -35,4 +35,4 @@ def test():
 
 if __name__ == "__main__":
     #app.run(host='0.0.0.0', port=5000, debug=True)
-    serve(app, host='0.0.0.0', port=5000)
+    serve(app, host='0.0.0.0', port=8080)

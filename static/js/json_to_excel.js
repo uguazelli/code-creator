@@ -5,7 +5,7 @@ async function uploadFile() {
   let textarea = document.getElementById("jsonToExcelTextArea").value;
   console.log(textarea);
 
-  await fetch("http://localhost:5000/json-to-excel", {
+  await fetch("http://localhost:8080/json-to-excel", {
     method: "POST",
     headers: {
       Accept: "application/json",

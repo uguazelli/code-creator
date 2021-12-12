@@ -3,19 +3,12 @@ FROM ubuntu:20.04
 RUN apt-get update && \
     apt-get -y install --no-install-recommends \
     python3 \
-    python3-pip \
-    tesseract-ocr \
-    tesseract-ocr-all
+    python3-pip
 
-RUN pip install pillow
+COPY requirements.txt requirements.txt
 
-RUN pip install pytesseract
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
+#RUN pip install easyocr
 
-COPY requirements.txt /tmp/
-
-RUN pip --disable-pip-version-check \
-    --no-cache-dir \
-    install -r /tmp/requirements.txt
-
-RUN rm -r -f /tmp/*
-
+CMD [ "python3", "app.py"]

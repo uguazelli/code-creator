@@ -32,37 +32,37 @@ function fetchParameters(action) {
   switch (action) {
     case "pdfSplit":
       return {
-        url: "http://127.0.0.1:5000/pdf-split",
+        url: "http://127.0.0.1:8080/pdf-split",
         downloadName: "result.zip",
       };
     case "pdfJoin":
       return {
-        url: "http://127.0.0.1:5000/pdf-join",
+        url: "http://127.0.0.1:8080/pdf-join",
         downloadName: "result.pdf",
       };
     case "csvToExcel":
       return {
-        url: "http://localhost:5000/csv-to-excel",
+        url: "http://localhost:8080/csv-to-excel",
         downloadName: "result.xlsx",
       };
     case "excelToCSV":
       return {
-        url: "http://localhost:5000/excel-to-csv",
+        url: "http://localhost:8080/excel-to-csv",
         downloadName: "result.csv",
       };
     case "imgToText":
       return {
-        url: "http://localhost:5000/image-to-text",
+        url: "http://localhost:8080/image-to-text",
         downloadName: "result.txt",
       };
     case "pdfToText":
       return {
-        url: "http://localhost:5000/pdf-to-text",
+        url: "http://localhost:8080/pdf-to-text",
         downloadName: "result.txt",
       };
       case "qrGenerator":
         return {
-          url: "http://localhost:5000/qr-generator",
+          url: "http://localhost:8080/qr-generator",
           downloadName: "result.jpg",
       };
   }

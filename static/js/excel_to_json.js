@@ -3,7 +3,7 @@ async function uploadFile() {
   let formData = new FormData();
   formData.append("file0", fileupload.files[0]);
 
-  await fetch("http://localhost:5000/excel-to-json", {
+  await fetch("http://localhost:8080/excel-to-json", {
     method: "POST",
     body: formData,
   })
