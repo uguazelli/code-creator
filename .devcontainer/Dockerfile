@@ -1,11 +1,16 @@
 FROM ubuntu:20.04
 
+WORKDIR /app
+
 RUN apt-get update && \
     apt-get -y install --no-install-recommends \
     python3 \
     python3-pip
 
-COPY requirements.txt requirements.txt
+EXPOSE 8080
+
+#COPY requirements.txt requirements.txt
+COPY . .
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
