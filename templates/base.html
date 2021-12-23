@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ugo Guazelli">
+    <title>QR 2 GO</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .material-icons.md-48 {
+            font-size: 48px;
+        }
+
+        .nav-tab-link {
+            color: white;
+        }
+
+        .material-icons.blue700 {
+            color: #3700B3;
+        }
+
+        .material-icons.green700 {
+            color: #2a9d8f;
+        }
+
+        .material-icons.orange700 {
+            color: #e76f51;
+        }
+
+        .material-icons.red700 {
+            color: #E30425;
+        }
+    </style>
+
+
+
+</head>
+
+<body style="background-color: #1d3557;">
+
+    <main class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1d3557;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span class="material-icons">qr_code</span>
+
+                </a>
+                <a class="navbar-brand" href="#"><strong>QR<span style="color: #e63946;">2</span>GO</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled">Disabled</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        {% block main %}{% endblock %}
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="{{url_for('static', filename='js/qr.js')}}"></script>
+
+</body>
+
+</html>

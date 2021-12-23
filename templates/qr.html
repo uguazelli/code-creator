@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<nav>
+    <div class="nav nav-tabs navbar-dark" id="nav-tab" role="tablist" style="background-color: #1d3557;">
+        <button class="nav-link nav-tab-link active" id="url-tab" onClick="showQRTab(this.id)">URL</button>
+        <button class="nav-link nav-tab-link" id="text-tab" onClick="showQRTab(this.id)">TEXT</button>
+    </div>
+</nav>
+
+<div>
+    <!--URL TAB-->
+    <div class="tab-pane fade show active">
+        <div class="row">
+            <div class="col-sm-8 my-3 p-3 bg-body rounded shadow-sm">
+                <h2 class="border-bottom pb-2 mb-0">QR Code Builder</h2>
+
+                <!--URL TAB-->
+                <div class="mb-3 row tab-change-content" id="url-tab-content" style="display: flex;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">travel_explore</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingURL">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseURL">
+                                    URL
+                                </button>
+                            </h2>
+                            <div id="collapseURL" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <label class="form-label">Enter a URL below</label>
+                                    <input type="text" id="textUpload" class="form-control" placeholder="www.qr2go.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--TEXT TAB-->
+                <div class="mb-3 row tab-change-content" id="text-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">description</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingText">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseText">
+                                    TEXT
+                                </button>
+                            </h2>
+                            <div id="collapseText" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <label class="form-label">Enter a TEXT below</label>
+                                    <textarea class="form-control" placeholder="Somenting amazing!!!"
+                                        id="floatingTextarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr>
+                <!--COLOR TAB-->
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 green700">palette</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingColor">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseColor">
+                                    Colors
+                                </button>
+                            </h2>
+                            <div id="collapseColor" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <label class="form-label">Select the QR Code's colors</label>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <label for="color" class="form-label">Main Color</label>
+                                            <input type="color" class="form-control form-control-color" id="frontcolor"
+                                                value="#000000" title="Choose your color">
+                                        </div>
+                                        <div class="col-sm">
+                                            <label for="backgroudcolor" class="form-label">Background Color</label>
+                                            <input type="color" class="form-control form-control-color"
+                                                id="backgroudcolor" value="#FFFFFF" title="Choose your color">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--FILE UPLOAD TAB-->
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 red700">image</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingLogo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLogo">
+                                    Logo
+                                </button>
+                            </h2>
+                            <div id="collapseLogo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <label for="formFile" class="form-label">Choose a image to add</label>
+                                    <input class="form-control" type="file" id="fileupload">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--CONFIGURATION TAB-->
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 orange700">settings_suggest</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingConfiguration">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseConfiguration">
+                                    Configuration
+                                </button>
+                            </h2>
+                            <div id="collapseConfiguration" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <label class="form-label">Chose the style</label>
+                                    <div class="row">
+                                        <div id="squaremodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3 border border-success">
+                                            <img src="/static/assets/images/squaremodule.png" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                        <div id="gappedmodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/gappedmodule.png" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                        <div id="circlemodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/circlemodule.png" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="roundedmodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/roundedmodule.png" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                        <div id="verticalbarmodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/verticalbarmodule.png"
+                                                style="max-width: 100%;" alt="">
+                                        </div>
+                                        <div id="horizontalbarmodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/horizontalbarmodule.png"
+                                                style="max-width: 100%;" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--PREVIEW-->
+            <div class="col-sm-4">
+                <div class="my-3 p-3 bg-body rounded shadow-sm">
+                    <div id="qr-backgroudcolor">
+                        <img id="qr-result" src="/static/assets/qr_preview.png" style="max-width: 100%;"
+                            alt="QR Code example">
+                    </div>
+                    <hr>
+                    <!--Send Button-->
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-primary btn-lg rounded-0"
+                            style="background-color: #1d3557;" onclick="createQR()">Download</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

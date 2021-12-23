@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div>
+
+    <div class="card">
+        <div class="card-header" onclick="collapseCard('content')">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="/static/assets/open-iconic-master/svg/globe.svg" alt="globe">
+                    </div>
+                    <div class="col-10">
+                        Content
+                    </div>
+                    <div class="col">
+                        <img src="/static/assets/open-iconic-master/svg/minus.svg" id="contentCollapse" alt="minus">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="collapse show">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="textUpload">URL or Text</label>
+                    <input type="text" class="form-control" id="textUpload" placeholder="Enter url or txt">
+                    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" onclick="collapseCard('color')">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="/static/assets/open-iconic-master/svg/droplet.svg" alt="droplet">
+                    </div>
+                    <div class="col-10">
+                        Color
+                    </div>
+                    <div class="col">
+                        <img src="/static/assets/open-iconic-master/svg/plus.svg" id="colorCollapse" alt="plus">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="color" class="collapse">
+            <div class="card-body">
+                <p>Choose your monster's colors:</p>
+
+                <div>
+                    <input type="color" id="head" name="head" value="#e66465">
+                    <label for="head">Head</label>
+                </div>
+
+                <div>
+                    <input type="color" id="body" name="body" value="#f6b73c">
+                    <label for="body">Body</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" onclick="collapseCard('logoImage')">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="/static/assets/open-iconic-master/svg/image.svg" alt="image">
+                    </div>
+                    <div class="col-10">
+                        Logo or Image
+                    </div>
+                    <div class="col">
+                        <img src="/static/assets/open-iconic-master/svg/plus.svg" id="logoImageCollapse" alt="plus">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="logoImage" class="collapse">
+            <div class="card-body">
+                <div class="container">
+                    <h3>Upload your File :</h3>
+                    <p><span class="text-danger">Optional</span> Select a image to add to your QR Code </p>
+                    <input type="file" id="fileupload" class="form-control" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" onclick="collapseCard('design')">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="/static/assets/open-iconic-master/svg/aperture.svg" alt="aperture">
+                    </div>
+                    <div class="col-10">
+                        Color
+                    </div>
+                    <div class="col">
+                        <img src="/static/assets/open-iconic-master/svg/plus.svg" id="designCollapse" alt="plus">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="design" class="collapse">
+            <div class="card-body">
+                Design
+            </div>
+        </div>
+    </div>
+
+    <button onclick="uploadQR()">Upload</button>
+
+</div>
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+            role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+</div>
+
+
+<script src="{{url_for('static', filename='js/qrcode.js')}}"></script>
+{% endblock %}
