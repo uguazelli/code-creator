@@ -9,6 +9,10 @@ RUN apt-get update && \
 
 EXPOSE 8080
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> add6da9d6158a5fb046e16b4aebbef9cf2a2d0c1
 COPY . .
 
 RUN pip install --upgrade pip

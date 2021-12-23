@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 amzqr==0.0.1
+=======
+>>>>>>> add6da9d6158a5fb046e16b4aebbef9cf2a2d0c1
 Flask==2.0.2
 Flask-Cors==3.0.10
 openpyxl==3.0.9

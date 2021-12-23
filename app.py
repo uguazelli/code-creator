@@ -34,5 +34,9 @@ def test():
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     #app.run(host='0.0.0.0', port=8080, debug=True)
+=======
+    #app.run(host='0.0.0.0', port=5000, debug=True)
+>>>>>>> add6da9d6158a5fb046e16b4aebbef9cf2a2d0c1
     serve(app, host='0.0.0.0', port=8080)

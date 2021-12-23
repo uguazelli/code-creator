@@ -16,6 +16,10 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 #RUN pip install easyocr
 
+<<<<<<< HEAD
 #CMD [ "python3", "app.py"]
 
 # docker run -d -p 8080:8080 d025c8a93181 python3 app.py
+=======
+CMD [ "python3", "app.py"]
+>>>>>>> add6da9d6158a5fb046e16b4aebbef9cf2a2d0c1
