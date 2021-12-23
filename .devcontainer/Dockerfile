@@ -18,4 +18,3 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 #CMD [ "python3", "app.py"]
 
-# docker run -d -p 8080:8080 d025c8a93181 python3 app.py

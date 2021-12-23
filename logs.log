@@ -1,0 +1,6 @@
+2021-12-23 14:41:59,124 (INFO) wasyncore.py:log_info => Serving on http://0.0.0.0:8080
+2021-12-23 14:42:26,013 (INFO) app_qr.py:qr => Working on GET
+2021-12-23 14:42:49,680 (INFO) app_qr.py:qr => Working on GET
+2021-12-23 14:44:46,163 (INFO) wasyncore.py:log_info => Serving on http://0.0.0.0:8080
+2021-12-23 14:44:57,551 (INFO) app_qr.py:qr => IP: 127.0.0.1 accessed /qr-code page
+2021-12-23 14:46:34,665 (INFO) app_qr.py:qr => IP: 127.0.0.1 accessed /qr-code page

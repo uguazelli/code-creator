@@ -1,13 +1,30 @@
 var module = "squaremodule";
+var modulemask = "solidfill";
 
 function selectModule(id){
     module = id;
     for (let element of document.getElementsByClassName("qrmodule")) {
         element.classList.remove("border");
         element.classList.remove("border-success");
+        element.classList.remove("border-5");
+
     }
     document.getElementById(id).classList.add("border");
     document.getElementById(id).classList.add("border-success");
+    document.getElementById(id).classList.add("border-5");
+}
+
+function selectModuleMask(id){
+    modulemask = id;
+    for (let element of document.getElementsByClassName("qrmodulemask")) {
+        element.classList.remove("border");
+        element.classList.remove("border-primary");
+        element.classList.remove("border-5");
+    }
+    document.getElementById(id).classList.add("border");
+    document.getElementById(id).classList.add("border-primary");
+    document.getElementById(id).classList.add("border-5");
+
 }
 
 function showQRTab(id) {
@@ -33,6 +50,7 @@ async function createQR() {
     formData.append("frontcolor", frontcolor.value);
     formData.append("backgroudcolor", backgroudcolor.value);
     formData.append("module", module);
+    formData.append("modulemask", modulemask)
 
     fetchParams = { method: "POST", body: formData }
 
