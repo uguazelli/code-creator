@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<style>
+    .card {
+        margin: 0 auto;
+        /* Added */
+        float: none;
+        /* Added */
+        margin-bottom: 10px;
+        /* Added */
+    }
+</style>
+
+<div>
+
+    <div class="tab-pane fade show active text-center">
+        <div class="row">
+            <div class="my-3 p-3 bg-body rounded shadow-sm">
+                <h2 class="border-bottom pb-2 mb-0">QR Line</h2>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 id="current-number" class="card-title text-center">15</h3>
+                        <h6 class="card-subtitle mb-2 text-muted text-center">Current Number</h6>
+                        <hr>
+                        <p class="card-text">
+                            <strong>Your Number: </strong> 19
+                        </p>
+                        <p><strong>Estimated Time:</strong>12 minutes</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+
+    urlElements = window.location.href.split("/");
+
+    roomName = urlElements[urlElements.indexOf("room") + 1];
+
+    var socket = io();
+    socket.connect();
+
+    socket.on('connect', function () {
+        socket.emit('join', { room: roomName });
+    });
+
+    socket.on('notify', function (msg) {
+        document.getElementById("current-number").innerHTML = msg;
+    });
+
+</script>
+
+{% endblock %}

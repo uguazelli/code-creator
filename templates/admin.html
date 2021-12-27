@@ -1,0 +1,24 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+    var socket = io();
+    socket.connect();
+
+    urlElements = window.location.href.split("/");
+
+    roomName = urlElements[urlElements.indexOf("room") + 1];
+
+    function emit() {
+        number = document.getElementById("number").value
+        socket.emit("notify", number, roomName);
+    }
+</script>
+
+<h1>Index from SoxketIO</h1>
+
+
+<label for="number">Number:</label>
+<input type="text" id="number"><br><br>
+
+<button onclick="emit()"> send</button>

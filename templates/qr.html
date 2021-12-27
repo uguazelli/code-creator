@@ -2,11 +2,15 @@
 
 {% block main %}
 
-
 <nav>
-    <div class="nav nav-tabs navbar-dark" id="nav-tab" role="tablist" style="background-color: #1d3557;">
+    <div class="nav nav-tabs navbar-dark app-main-color" id="nav-tab" role="tablist">
         <button class="nav-link nav-tab-link active" id="url-tab" onClick="showQRTab(this.id)">URL</button>
         <button class="nav-link nav-tab-link" id="text-tab" onClick="showQRTab(this.id)">TEXT</button>
+        <button class="nav-link nav-tab-link" id="email-tab" onClick="showQRTab(this.id)">EMAIL</button>
+        <button class="nav-link nav-tab-link" id="phone-tab" onClick="showQRTab(this.id)">PHONE</button>
+        <button class="nav-link nav-tab-link" id="sms-tab" onClick="showQRTab(this.id)">SMS</button>
+        <button class="nav-link nav-tab-link" id="wifi-tab" onClick="showQRTab(this.id)">WIFI</button>
+        <button class="nav-link nav-tab-link" id="calendar-tab" onClick="showQRTab(this.id)">CALENDAR</button>
     </div>
 </nav>
 
@@ -33,7 +37,7 @@
                             <div id="collapseURL" class="accordion-collapse collapse show">
                                 <div class="accordion-body">
                                     <label class="form-label">Enter a URL below</label>
-                                    <input type="text" id="textUpload" class="form-control" placeholder="www.qr2go.com">
+                                    <input type="text" id="urlUpload" class="form-control" placeholder="www.qr2go.com">
                                 </div>
                             </div>
                         </div>
@@ -57,13 +61,143 @@
                                 <div class="accordion-body">
                                     <label class="form-label">Enter a TEXT below</label>
                                     <textarea class="form-control" placeholder="Somenting amazing!!!"
-                                        id="floatingTextarea"></textarea>
+                                        id="textUpload"></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!--EMAIL TAB-->
+                <div class="mb-3 row tab-change-content" id="email-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">email</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingText">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEmail">
+                                    EMAIL
+                                </button>
+                            </h2>
+                            <div id="collapseEmail" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email address to:</label>
+                                        <input type="email" class="form-control" id="emailTO"
+                                            placeholder="name@example.com">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Subject:</label>
+                                        <input type="text" class="form-control" id="emailSubject">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Message:</label>
+                                        <textarea class="form-control" id="emailMessage" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PHONE TAB-->
+                <div class="mb-3 row tab-change-content" id="phone-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">call</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingURL">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePhone">
+                                    URL
+                                </button>
+                            </h2>
+                            <div id="collapsePhone" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <label class="form-label">Enter a phone number</label>
+                                    <input type="phone" id="phoneUpload" class="form-control"
+                                        placeholder="+1 555 963 1234">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--SMS TAB-->
+                <div class="mb-3 row tab-change-content" id="sms-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">textsms</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingURL">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSMS">
+                                    SMS
+                                </button>
+                            </h2>
+                            <div id="collapseSMS" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone number</label>
+                                        <input type="phone" id="SMSPhone" class="form-control"
+                                            placeholder="+1 555 963 1234">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Message</label>
+                                        <input type="text" id="SMSMessage" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--WIFI TAB-->
+                <div class="mb-3 row tab-change-content" id="wifi-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">call</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingWIFI">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWifi">
+                                    WIFI
+                                </button>
+                            </h2>
+                            <div id="collapseWifi" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Wireless SSID</label>
+                                        <input type="text" id="ssid" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" id="wifi-password" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Encryption</label>
+                                        <select id="wifi-encryption" class="form-select"
+                                            aria-label="Default select example">
+                                            <option value="WPA">WPA</option>
+                                            <option value="WPE">WEP</option>
+                                            <option value="nyanpass">No Encryption</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <hr>
                 <!--COLOR TAB-->
@@ -224,16 +358,22 @@
                     <div id="qr-backgroudcolor">
                         <img id="qr-result" src="/static/assets/qr_preview.png" style="max-width: 100%;"
                             alt="QR Code example">
+
+                        <div class="d-flex justify-content-center">
+                            <div id="qr-code-loader" class="spinner-border text-success" role="status"
+                                style="width: 5rem; height: 5rem; display: none;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+
                     </div>
                     <hr>
                     <!--Send Button-->
                     <div class="col text-center">
-                        <button type="button" class="btn btn-primary btn-lg rounded-0"
-                            style="background-color: #1d3557;" onclick="createQR()">Download</button>
+                        <button type="button" class="btn btn-primary btn-lg rounded-0 w-100 border-0 app-main-color"
+                            onclick="createQR()">Generate</button>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>

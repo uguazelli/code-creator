@@ -3,11 +3,6 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": "..",
-		"args": {
-			"VARIANT": "3.10-bullseye",
-			// Options
-			"NODE_VERSION": "none"
-		},
 	},
 	"workspaceMount": "source=${localWorkspaceFolder}/,target=/app,type=bind,consistency=delegated",
 	"workspaceFolder": "/app",
