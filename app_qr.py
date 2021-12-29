@@ -1,19 +1,18 @@
-
-
 import uuid, os, qrcode, logging
-from flask import request, Blueprint, send_file, render_template
+from util import TEMP_DIR
+from flask import request, Blueprint, send_file, render_template, session, redirect
 from qrcode.image.styledpil import StyledPilImage
 from qrcode.image.styles.moduledrawers import CircleModuleDrawer, GappedSquareModuleDrawer, HorizontalBarsDrawer, RoundedModuleDrawer, SquareModuleDrawer, VerticalBarsDrawer
 
 app_qr = Blueprint('app_qr','__name__')
 
-PROJECT_ROOT = os.path.dirname(__file__)
-TEMP_DIR = os.path.join(PROJECT_ROOT, "tmp")
-
-
-@app_qr.route('/qr-code/admin/room/<string:room>')
+@app_qr.route('/qr-code/admin/room/<string:room>', methods=["GET","POST"])
 def index(room):
-    return render_template('admin.html')
+    if session.get('email') is not None:
+        return render_template('admin.html')
+    else:
+        return redirect('/qr-code/login')
+
 
 @app_qr.route("/qr-client/room/<string:room>", methods=["GET","POST"])
 def qr_client(room):
@@ -21,12 +20,13 @@ def qr_client(room):
         return render_template('qr-client.html')
 
 
+
 @app_qr.route("/qr-code", methods=["GET","POST"])
 def qr():
     if request.method == "GET":
         logging.info(f'IP: {request.remote_addr} GET /qr-code page')
-
         return render_template('qr.html', title="QR Code Generator")
+
     else:
         logging.info(f'IP: {request.remote_addr} POST /qr-code page')
 
@@ -67,22 +67,6 @@ def qr():
         else:
             md = SquareModuleDrawer()
 
-        #color mask
-        #if modulemask == "solidfill":
-        #    mdmask = SolidFillColorMask()
-        #elif modulemask == "radialgradiant":
-        #    mdmask = RadialGradiantColorMask()
-        #elif modulemask == "squaregradiant":
-        #    mdmask = SquareGradiantColorMask()
-        #elif modulemask == "horizontalgradiant":
-        #    mdmask = HorizontalGradiantColorMask()
-        #elif modulemask == "verticalgradiant":
-        #    mdmask = VerticalGradiantColorMask()
-        #elif modulemask == "imagecolor":
-        #    mdmask = ImageColorMask()
-        #else:
-        #    mdmask = SolidFillColorMask()
-
 
         if (module != "squaremodule"):
             image_factory = StyledPilImage
@@ -94,8 +78,7 @@ def qr():
             back_color=QRbackgroundcolor,
             image_factory=image_factory,
             embeded_image_path=logo,
-            module_drawer=md,
-            #color_mask=mdmask
+            module_drawer=md
             ).convert('RGB')
 
         result_path = os.path.join(TEMP_DIR, str(uuid.uuid1()) + ".png")

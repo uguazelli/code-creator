@@ -1,33 +1,30 @@
 import os, time, logging
-from waitress import serve
-from flask import Flask, render_template
+from flask import Flask
 from flask_cors import CORS
+from flask_socketio import SocketIO, emit, join_room, leave_room
 from app_qr import app_qr
-from flask_socketio import SocketIO, send, emit, join_room, leave_room
-
+from app_login import app_login
+from util import TEMP_DIR
 #from app_pdf import app_pdf
 #from app_ocr import app_ocr
 #from app_excel import app_excel
 
-logging.basicConfig(
-                    level = logging.INFO,
-                    format = '%(asctime)s (%(levelname)s) %(filename)s:%(funcName)s => %(message)s',
-                    handlers=[
-                        logging.FileHandler("logs.log"),
-                        logging.StreamHandler()
-                        ]
-                    )
-
-PROJECT_ROOT = os.path.dirname(__file__)
-TEMP_DIR = os.path.join(PROJECT_ROOT, "tmp")
-
 app = Flask(__name__)
+app.secret_key = '28917010'
+app.register_blueprint(app_qr)
+app.register_blueprint(app_login)
 #app.register_blueprint(app_excel)
 #app.register_blueprint(app_pdf)
 #app.register_blueprint(app_ocr)
-app.register_blueprint(app_qr)
 
 cors = CORS(app)
+
+logging.basicConfig(
+                    level = logging.INFO,
+                    format = '%(asctime)s (%(levelname)s) %(filename)s:%(funcName)s => %(message)s',
+                    handlers=[ logging.FileHandler("logs.log"), logging.StreamHandler() ]
+                    )
+
 
 @app.before_request
 def clean_temp():
@@ -39,7 +36,7 @@ def clean_temp():
             os.remove(os.path.join(TEMP_DIR, filename))
 
 
-## Socket IO
+### Socket IO ###
 
 socketio = SocketIO(app)
 
@@ -66,5 +63,4 @@ def on_leave(data):
 
 if __name__ == "__main__":
     #app.run(host='0.0.0.0', port=8080, debug=True)
-    #serve(app, host='0.0.0.0', port=8080, threads= 8)
     socketio.run(app, port=8080)

@@ -9,7 +9,6 @@ RUN apt-get update && \
 
 EXPOSE 8080
 
-#COPY requirements.txt requirements.txt
 COPY . .
 
 RUN pip install --upgrade pip
@@ -17,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 #RUN pip install easyocr
 
 #CMD [ "python3", "app.py"]
-
+#ENTRYPOINT ["./gunicorn_starter.sh"]
