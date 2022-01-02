@@ -1,5 +1,6 @@
 import uuid, os, qrcode, logging, constants, util
 from util import TEMP_DIR, login_required
+from passlib.hash import sha256_crypt
 from flask import request, Blueprint, send_file, render_template, session, redirect, jsonify
 from qrcode.image.styledpil import StyledPilImage
 from qrcode.image.styles.moduledrawers import CircleModuleDrawer, GappedSquareModuleDrawer, HorizontalBarsDrawer, RoundedModuleDrawer, SquareModuleDrawer, VerticalBarsDrawer
@@ -20,7 +21,7 @@ def get_rooms():
     methods=["GET","POST"])
 @login_required
 def admin():
-    return render_template('admin.html', data = get_rooms())
+    return render_template('admin/admin.html', data = get_rooms())
 
 
 
@@ -36,6 +37,22 @@ def rooms():
         values = ( req["id"], req["actual_number"] )
         query = constants.sql_register
         result = util.query_exec(query, values)
+
+
+@app_qr.route('/qr-code/admin/change-password',
+    methods=["GET","POST"])
+@login_required
+def admin_change_password():
+    if request.method == "GET":
+        return render_template('admin/change-password.html')
+    else:
+        req = request.get_json()
+        email = session.get('email')
+        password = sha256_crypt.encrypt(req["password"])
+        values = ( password,  email )
+        query = constants.sql_update_password
+        result = util.query_exec(query, values)
+        return jsonify(result)
 
 
 

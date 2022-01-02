@@ -87,12 +87,10 @@
             <input type="password" class="form-control" id="password" placeholder="Password">
             <label for="password">Password</label>
         </div>
-
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
+        <div class="form-floating">
+            <div id="signin-alert" style="color: red; display: none;">Incorrect email or password</div>
         </div>
+
         <button onclick="logIn()" id="register-button" class="w-100 btn btn-lg btn-primary">Sign
             in</button>
         <button id="register-button-loading" class="btn btn-primary" type="button" disabled style="display: none;">
@@ -111,12 +109,18 @@
 
         var registerButton = document.getElementById("register-button");
         var registerButtonLoading = document.getElementById("register-button-loading");
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
+        var email = document.getElementById("email")
+        var password = document.getElementById("password")
+
+        if (email.value == '' || password.value == '') {
+            email.style.borderBottom = "2px solid red"
+            password.style.borderBottom = "2px solid red"
+            return
+        }
 
         var payload = {
-            "email": email,
-            "password": password
+            "email": email.value,
+            "password": password.value
         }
 
         registerButton.style.display = "none";
@@ -137,6 +141,7 @@
         }
         registerButtonLoading.style.display = "none"
         registerButton.style.display = "flex"
+        document.getElementById("signin-alert").style.display = "flex"
         console.log(data)
 
     }

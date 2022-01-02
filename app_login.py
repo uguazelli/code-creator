@@ -19,8 +19,9 @@ def login():
         req = request.get_json()
         query, values = constants.sql_login, (req["email"],)
         result = util.query_select(query, values)
-        pswd, db_pswd = req["password"], result[0]["password"]
-        valid_pass =  sha256_crypt.verify(pswd, db_pswd)
+        if len(result) > 0:
+            pswd, db_pswd = req["password"], result[0]["password"]
+            valid_pass =  sha256_crypt.verify(pswd, db_pswd)
 
         if len(result) > 0 and valid_pass:
             session['email'] = req["email"]
