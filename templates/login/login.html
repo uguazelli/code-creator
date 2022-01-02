@@ -111,7 +111,6 @@
 
         var registerButton = document.getElementById("register-button");
         var registerButtonLoading = document.getElementById("register-button-loading");
-
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
 
@@ -123,7 +122,7 @@
         registerButton.style.display = "none";
         registerButtonLoading.style.display = "flex";
 
-        await fetch("/qr-code/login", {
+        var response = await fetch("/qr-code/login", {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -131,17 +130,16 @@
             },
             body: JSON.stringify(payload)
         })
-            .then((response) => response.json())
-            .then((data) => console.log(data))
-            .catch((error) => console.log(error))
-            .finally(() => {
-                registerButtonLoading.style.display = "none"
-                registerButton.style.display = "flex"
 
-            })
+        var data = await response.json()
+        if (data.Success) {
+            location.replace("/qr-code/admin")
+        }
+        registerButtonLoading.style.display = "none"
+        registerButton.style.display = "flex"
+        console.log(data)
 
     }
-
 
 </script>
 

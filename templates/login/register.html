@@ -67,8 +67,6 @@
         }
     </style>
 
-
-
 </head>
 
 <body class="text-center">
@@ -82,11 +80,6 @@
         <div class="form-floating">
             <input type="email" class="form-control" id="email" required>
             <label for="email">Email address</label>
-        </div>
-        <br>
-        <div class="form-floating">
-            <input type="text" class="form-control" id="company-name">
-            <label for="company-name">Company Name</label>
         </div>
         <br>
         <div class="form-floating">
@@ -115,7 +108,7 @@
             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             Loading...
         </button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
 
     </main>
 
@@ -125,23 +118,16 @@
 
 <script>
 
-
-
     async function register() {
-
         var registerButton = document.getElementById("register-button");
         var registerButtonLoading = document.getElementById("register-button-loading");
-
         var email = document.getElementById("email").value;
-        var companyName = document.getElementById("company-name").value;
         var firstName = document.getElementById("first-name").value;
         var lastName = document.getElementById("last-name").value;
         var password = document.getElementById("password").value;
         var confirmPassword = document.getElementById("confirm-password").value;
-
         var payload = {
             "email": email,
-            "companyName": companyName,
             "firstName": firstName,
             "lastName": lastName,
             "password": password,
@@ -151,7 +137,7 @@
         registerButton.style.display = "none";
         registerButtonLoading.style.display = "flex";
 
-        await fetch("/qr-code/register", {
+        var response = await fetch("/qr-code/register", {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -159,15 +145,14 @@
             },
             body: JSON.stringify(payload)
         })
-            .then((response) => response.json())
-            .then((data) => console.log(data))
-            .catch((error) => console.log(error))
-            .finally(() => {
-                registerButtonLoading.style.display = "none"
-                registerButton.style.display = "flex"
 
-            })
-
+        var data = await response.json()
+        if (data.Success) {
+            location.replace("/qr-code/admin")
+        }
+        registerButtonLoading.style.display = "none"
+        registerButton.style.display = "flex"
+        console.log(data)
     }
 
 

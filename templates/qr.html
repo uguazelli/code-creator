@@ -10,12 +10,12 @@
         <button class="nav-link nav-tab-link" id="phone-tab" onClick="showQRTab(this.id)">PHONE</button>
         <button class="nav-link nav-tab-link" id="sms-tab" onClick="showQRTab(this.id)">SMS</button>
         <button class="nav-link nav-tab-link" id="wifi-tab" onClick="showQRTab(this.id)">WIFI</button>
-        <button class="nav-link nav-tab-link" id="calendar-tab" onClick="showQRTab(this.id)">CALENDAR</button>
+        <!--<button class="nav-link nav-tab-link" id="calendar-tab" onClick="showQRTab(this.id)">CALENDAR</button>-->
     </div>
 </nav>
 
 <div>
-    <!--URL TAB-->
+    <!--TABS-->
     <div class="tab-pane fade show active">
         <div class="row">
             <div class="col-sm-8 my-3 p-3 bg-body rounded shadow-sm">
@@ -277,34 +277,34 @@
                                     <div class="row">
                                         <div id="squaremodule" onclick="selectModule(this.id)"
                                             class="qrmodule col-sm-4 p-3 border border-5 border-success">
-                                            <img src="/static/assets/images/squaremodule.png" style="max-width: 100%;"
+                                            <img src="/static/assets/images/squaremodule.webp" style="max-width: 100%;"
                                                 alt="">
                                         </div>
                                         <div id="gappedmodule" onclick="selectModule(this.id)"
                                             class="qrmodule col-sm-4 p-3">
-                                            <img src="/static/assets/images/gappedmodule.png" style="max-width: 100%;"
+                                            <img src="/static/assets/images/gappedmodule.webp" style="max-width: 100%;"
                                                 alt="">
                                         </div>
                                         <div id="circlemodule" onclick="selectModule(this.id)"
                                             class="qrmodule col-sm-4 p-3">
-                                            <img src="/static/assets/images/circlemodule.png" style="max-width: 100%;"
+                                            <img src="/static/assets/images/circlemodule.webp" style="max-width: 100%;"
                                                 alt="">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div id="roundedmodule" onclick="selectModule(this.id)"
                                             class="qrmodule col-sm-4 p-3">
-                                            <img src="/static/assets/images/roundedmodule.png" style="max-width: 100%;"
+                                            <img src="/static/assets/images/roundedmodule.webp" style="max-width: 100%;"
                                                 alt="">
                                         </div>
                                         <div id="verticalbarmodule" onclick="selectModule(this.id)"
                                             class="qrmodule col-sm-4 p-3">
-                                            <img src="/static/assets/images/verticalbarmodule.png"
+                                            <img src="/static/assets/images/verticalbarmodule.webp"
                                                 style="max-width: 100%;" alt="">
                                         </div>
                                         <div id="horizontalbarmodule" onclick="selectModule(this.id)"
                                             class="qrmodule col-sm-4 p-3">
-                                            <img src="/static/assets/images/horizontalbarmodule.png"
+                                            <img src="/static/assets/images/horizontalbarmodule.webp"
                                                 style="max-width: 100%;" alt="">
                                         </div>
                                     </div>
@@ -313,34 +313,34 @@
                                     <div class="row">
                                         <div id="solidfill" onclick="selectModuleMask(this.id)"
                                             class="qrmodulemask col-sm-4 p-3">
-                                            <img src="/static/assets/images/solidfill.png" style="max-width: 100%;"
+                                            <img src="/static/assets/images/solidfill.webp" style="max-width: 100%;"
                                                 alt="">
                                         </div>
                                         <div id="radialgradiant" onclick="selectModuleMask(this.id)"
                                             class="qrmodulemask col-sm-4 p-3">
-                                            <img src="/static/assets/images/radialgradiant.png" style="max-width: 100%;"
+                                            <img src="/static/assets/images/radialgradiant.webp" style="max-width: 100%;"
                                                 alt="">
                                         </div>
                                         <div id="squaregradiant" onclick="selectModuleMask(this.id)"
                                             class="qrmodulemask col-sm-4 p-3">
-                                            <img src="/static/assets/images/squaregradiant.png" style="max-width: 100%;"
+                                            <img src="/static/assets/images/squaregradiant.webp" style="max-width: 100%;"
                                                 alt="">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div id="horizontalgradiant" onclick="selectModuleMask(this.id)"
                                             class="qrmodulemask col-sm-4 p-3">
-                                            <img src="/static/assets/images/horizontalgradiant.png"
+                                            <img src="/static/assets/images/horizontalgradiant.webp"
                                                 style="max-width: 100%;" alt="">
                                         </div>
                                         <div id="verticalgradiant" onclick="selectModuleMask(this.id)"
                                             class="qrmodulemask col-sm-4 p-3">
-                                            <img src="/static/assets/images/verticalgradiant.png"
+                                            <img src="/static/assets/images/verticalgradiant.webp"
                                                 style="max-width: 100%;" alt="">
                                         </div>
                                         <div id="imagecolor" onclick="selectModuleMask(this.id)"
                                             class="qrmodulemask col-sm-4 p-3">
-                                            <img src="/static/assets/images/imagecolor.png" style="max-width: 100%;"
+                                            <img src="/static/assets/images/imagecolor.webp" style="max-width: 100%;"
                                                 alt="">
                                         </div>
                                     </div>
@@ -356,8 +356,8 @@
             <div class="col-sm-4">
                 <div class="my-3 p-3 bg-body rounded shadow-sm">
                     <div id="qr-backgroudcolor">
-                        <img id="qr-result" src="/static/assets/qr_preview.png" style="max-width: 100%;"
-                            alt="QR Code example">
+                        <img id="qr-result" src="/static/assets/qr.webp"
+                            style="max-width: 100%; width: 100; height: 100;" alt="QR Code example">
 
                         <div class="d-flex justify-content-center">
                             <div id="qr-code-loader" class="spinner-border text-success" role="status"
@@ -378,5 +378,134 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    var module = "squaremodule";
+    var modulemask = "solidfill";
+    var selectedTab = "url-tab";
+    var urlUpload = document.getElementById("urlUpload");
+    var text = "QR CODE FAILED";
+    var fileUpload = document.getElementById("fileupload");
+    var frontcolor = document.getElementById("frontcolor");
+    var backgroudcolor = document.getElementById("backgroudcolor");
+
+
+    function selectModule(id) {
+        module = id;
+        for (let element of document.getElementsByClassName("qrmodule")) {
+            element.classList.remove("border", "border-success", "border-5");
+        }
+        document.getElementById(id).classList.add("border", "border-success", "border-5");
+    }
+
+
+
+    function selectModuleMask(id) {
+        modulemask = id;
+        for (let element of document.getElementsByClassName("qrmodulemask")) {
+            element.classList.remove("border", "border-primary", "border-5");
+        }
+        document.getElementById(id).classList.add("border", "border-primary", "border-5");
+    }
+
+
+
+    function showQRTab(id) {
+        selectedTab = id;
+        for (let element of document.getElementsByClassName("nav-tab-link")) {
+            element.classList.remove("active");
+        }
+        document.getElementById(id).classList.add("active")
+
+        for (let element of document.getElementsByClassName("tab-change-content")) {
+            element.style.display = "none";
+        }
+        document.getElementById(id + "-content").style.display = "flex";
+    }
+
+
+
+    async function createQR() {
+        var qrResult = document.getElementById("qr-result");
+        var qrCodeLoader = document.getElementById("qr-code-loader");
+        qrResult.style.display = "none";
+        qrCodeLoader.style.display = "flex";
+
+        if (selectedTab == "url-tab") {
+            text = document.getElementById("urlUpload").value;
+
+        } else if (selectedTab == "text-tab") {
+            text = document.getElementById("textUpload").value;
+
+        } else if (selectedTab == "email-tab") {
+            emailTO = document.getElementById("emailTO").value;
+            emailSubject = document.getElementById("emailSubject").value;
+            emailMessage = document.getElementById("emailMessage").value;
+            text = '<a href="mailto:' + emailTO + '?'
+            text += 'subject=' + emailSubject.replace(/ /g, '%20')
+            text += '&body=' + emailMessage.replace(/ /g, '%20') + '">Send Email</a>'
+
+        } else if (selectedTab == "phone-tab") {
+            phone = document.getElementById("phoneUpload").value;
+            text = '<a href="tel:'
+            text += phone.replace(/ /g, '')
+            text += '">'
+            text += phone
+            text += '</a>'
+
+        } else if (selectedTab == "sms-tab") {
+            phone = document.getElementById("SMSPhone").value;
+            message = document.getElementById("SMSMessage").value;
+            text = '<a href="sms:'
+            text += phone.replace(/ /g, '')
+            text += '&body='
+            text += message.replace(/ /g, '%20')
+            text += '">'
+            text += phone
+            text += '</a>'
+
+        } else if (selectedTab == "wifi-tab") {
+            ssid = document.getElementById("ssid").value;
+            password = document.getElementById("wifi-password").value;
+            type = document.getElementById("wifi-encryption").value;
+            text = 'WIFI:T:' + type + ';S:' + ssid + ';P:' + password + ';;';
+        }
+
+        else {
+            text = "QR CODE FAILED";
+        }
+
+        console.log(text)
+
+        let formData = new FormData();
+        formData.append("text", text);
+        formData.append("file", fileUpload.files[0]);
+        formData.append("frontcolor", frontcolor.value);
+        formData.append("backgroudcolor", backgroudcolor.value);
+        formData.append("module", module);
+        formData.append("modulemask", modulemask)
+
+        fetchParams = { method: "POST", body: formData }
+
+        await fetch("/qr-code", fetchParams)
+            .then((res) => res.blob())
+            .then((data) => {
+                let a = document.createElement("a");
+                a.href = window.URL.createObjectURL(data);
+                document.getElementById("qr-result").src = a.href;
+                a.download = "result.png";
+                a.click();
+            })
+            .catch((error) => console.log(error))
+            .finally(() => {
+                qrCodeLoader.style.display = "none";
+                qrResult.style.display = "flex";
+            })
+    }
+
+
+</script>
+
 
 {% endblock %}

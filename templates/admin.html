@@ -1,28 +1,141 @@
+{% extends "base-admin.html" %} {% block main %}
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <h1>Lines</h1>
+
+
+  <div class="accordion" id="accordionExample">
+    {% for item in data %}
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="accordion-header-{{item.id}}">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-{{item.id}}" aria-expanded="true" aria-controls="panelsStayOpen-{{item.id}}">
+          {{item.name}}
+        </button>
+      </h2>
+      <div id="panelsStayOpen-{{item.id}}" class="accordion-collapse collapse"
+        aria-labelledby="accordion-header-{{item.id}}">
+        <div class="accordion-body">
+
+          <div class="text-center">
+            <h1 id="number-{{item.id}}" class="display-1">{{item.prefix + item.actual_number}}</h1>
+          </div>
+
+          <nav aria-label="Page navigation example">
+            <ul id="pagination-{{item.id}}" class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" onclick="changeNumber('{{item.id}}', 'previous')">Previous</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" onclick="changeNumber('{{item.id}}', 'next')">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mb-3 row">
+            <label for="newNumber" class="col-3 col-form-label">Set Number</label>
+            <div class="col-6">
+              <input type="text" class="form-control" id="newNumber-{{item.id}}" value="M">
+            </div>
+            <div class="col-3">
+              <button type="submit" class="btn btn-primary mb-3"
+                onclick="setNumber('{{item.id}}', '{{item.prefix}}')">Confirm</button>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="reset" class="col-9 col-form-label">GENERATE LINK</label>
+            <div class="col-3">
+
+              <button type="submit" class="btn btn-primary mb-3"
+                onclick="generateClientURL('{{item.id}}', '{{prefix}}')">Confirm</button>
+
+              <div id="copyToast" class="toast align-items-center text-white bg-info border-0" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                  <div class="toast-body">Copied to clipboard.</div>
+                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</main>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
-    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
-    crossorigin="anonymous"></script>
-<script type="text/javascript" charset="utf-8">
-    var socket = io();
-    socket.connect();
+  integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+  crossorigin="anonymous"></script>
 
-    urlElements = window.location.href.split("/");
+<script>
 
-    roomName = urlElements[urlElements.indexOf("room") + 1];
+  var socket = io();
+  socket.connect();
 
-    function emit() {
-        number = document.getElementById("number").value
-        socket.emit("notify", number, roomName);
-    }
+  async function changeNumber(item, action) {
+    var data = await getRooms()
+    var room = data.find(room => room.id == item)
+    var number = document.getElementById("number-" + room.id)
+    var parsedNum = parseInt(room.actual_number)
+    var newNumber = action == 'next' ? parsedNum + 1 : parsedNum - 1
+    var updateRoom = await updateRoomNumber(room.id, newNumber)
+    number.innerHTML = room.prefix + newNumber
+    //IO
+    socket.emit("notify", (room.prefix + newNumber), room.id)
+
+  }
+
+
+  async function setNumber(id, prefix) {
+    var displayNumber = document.getElementById("number-" + id)
+    var numberValue = document.getElementById("newNumber-" + id).value
+    var updateRoom = await updateRoomNumber(parseInt(id), numberValue.replace(prefix, ''))
+    displayNumber.innerHTML = numberValue
+    //IO
+    socket.emit("notify", numberValue, id)
+
+  }
+
+  async function getRooms() {
+    var response = await fetch("/qr-code/admin/room")
+    return await response.json()
+  }
+
+
+
+  async function updateRoomNumber(roomID, newNumber) {
+    var response = await fetch(
+      "/qr-code/admin/room/" + roomID + "/number/" + newNumber, {
+      method: 'POST'
+    })
+    return await response.json()
+  }
+
+
+  function generateClientURL(id) {
+    var url = window.location.href
+    url = url.split("/")
+    url = "http://" + url[2] + "/qr-client/room/" + id
+    navigator.clipboard.writeText(url)
+    var t = document.getElementById('copyToast')
+    var toast = new bootstrap.Toast(t)
+    toast.show()
+
+
+
+  }
+
+
 </script>
 
-<h1>Index from SoxketIO</h1>
-
-
-<label for="number">Number:</label>
-<input type="text" id="number"><br><br>
-
-<button onclick="emit()"> send</button>
-
-
-<br>
-<a href="/qr-code/logout">Logout</a>
+{% endblock %}

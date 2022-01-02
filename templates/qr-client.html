@@ -23,11 +23,11 @@
 
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h3 id="current-number" class="card-title text-center">15</h3>
+                        <h3 id="current-number" class="card-title text-center">{{admin_number}}</h3>
                         <h6 class="card-subtitle mb-2 text-muted text-center">Current Number</h6>
                         <hr>
                         <p class="card-text">
-                            <strong>Your Number: </strong> 19
+                            <strong>Your Number: </strong> {{client_number}}
                         </p>
                         <p><strong>Estimated Time:</strong>12 minutes</p>
                     </div>
@@ -43,20 +43,22 @@
     crossorigin="anonymous"></script>
 <script type="text/javascript" charset="utf-8">
 
-    urlElements = window.location.href.split("/");
+    var socket = io()
+    socket.connect()
+    urlElements = window.location.href.split("/")
+    roomID = urlElements[urlElements.indexOf("room") + 1]
 
-    roomName = urlElements[urlElements.indexOf("room") + 1];
+    socket.on('connect_error', () => {
+        alert('Failed to connect to server')
+    })
 
-    var socket = io();
-    socket.connect();
+    socket.on('connect', () => {
+        socket.emit('join', { id: roomID })
+    })
 
-    socket.on('connect', function () {
-        socket.emit('join', { room: roomName });
-    });
-
-    socket.on('notify', function (msg) {
-        document.getElementById("current-number").innerHTML = msg;
-    });
+    socket.on('notify', (msg) => {
+        document.getElementById("current-number").innerHTML = msg
+    })
 
 </script>
 
