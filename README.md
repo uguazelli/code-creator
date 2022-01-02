@@ -1,1 +1,1 @@
-﻿# QR 2 GO
+﻿# QR-TRON
