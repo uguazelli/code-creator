@@ -1,0 +1,848 @@
+2022-01-02 18:50:37,344 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-02 18:57:04,957 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-02 18:57:04,961 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-02 18:57:50,407 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 18:57:50] "[33mGET /qr-code/admin/ HTTP/1.1[0m" 404 -
+2022-01-02 22:08:56,563 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:08:56] "GET /qr-code/admin HTTP/1.1" 200 -
+2022-01-02 22:08:57,017 (ERROR) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+2022-01-02 22:08:57,019 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:08:57] "GET /socket.io/?EIO=4&transport=polling&t=NuSrgWf HTTP/1.1" 200 -
+2022-01-02 22:09:00,357 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:09:00] "POST /socket.io/?EIO=4&transport=polling&t=NuSrgak&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:09:00,415 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:09:00] "GET /socket.io/?EIO=4&transport=polling&t=NuSrgal&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:09:22,044 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:09:22] "GET /socket.io/?EIO=4&transport=polling&t=NuSrhPI&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:09:22,151 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:09:22] "POST /socket.io/?EIO=4&transport=polling&t=NuSrmhM&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:09:47,176 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:09:47] "GET /socket.io/?EIO=4&transport=polling&t=NuSrmhM.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:09:51,538 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:09:51] "POST /socket.io/?EIO=4&transport=polling&t=NuSrsqI&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:10:16,563 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:10:16] "GET /socket.io/?EIO=4&transport=polling&t=NuSrsqJ&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:10:16,696 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:10:16] "POST /socket.io/?EIO=4&transport=polling&t=NuSrz_d&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:10:41,713 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:10:41] "GET /socket.io/?EIO=4&transport=polling&t=NuSrz_e&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:10:44,994 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:10:44] "POST /socket.io/?EIO=4&transport=polling&t=NuSs48N&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:11:10,020 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:11:10] "GET /socket.io/?EIO=4&transport=polling&t=NuSs48O&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:11:10,104 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:11:10] "POST /socket.io/?EIO=4&transport=polling&t=NuSsB27&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:11:35,123 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:11:35] "GET /socket.io/?EIO=4&transport=polling&t=NuSsB28&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:11:40,372 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:11:40] "POST /socket.io/?EIO=4&transport=polling&t=NuSsHB2&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:12:05,397 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:12:05] "GET /socket.io/?EIO=4&transport=polling&t=NuSsHB2.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:12:05,528 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:12:05] "POST /socket.io/?EIO=4&transport=polling&t=NuSsOa6&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:12:30,553 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:12:30] "GET /socket.io/?EIO=4&transport=polling&t=NuSsOa7&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:12:33,955 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:12:33] "POST /socket.io/?EIO=4&transport=polling&t=NuSsUj0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:12:58,959 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:12:58] "GET /socket.io/?EIO=4&transport=polling&t=NuSsUj1&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:12:59,085 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:12:59] "POST /socket.io/?EIO=4&transport=polling&t=NuSsbey&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:13:24,110 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:13:24] "GET /socket.io/?EIO=4&transport=polling&t=NuSsbe-&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:13:27,965 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:13:27] "POST /socket.io/?EIO=4&transport=polling&t=NuSsho1&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:13:52,991 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:13:52] "GET /socket.io/?EIO=4&transport=polling&t=NuSsho2&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:13:53,111 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:13:53] "POST /socket.io/?EIO=4&transport=polling&t=NuSsor7&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:14:18,136 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:14:18] "GET /socket.io/?EIO=4&transport=polling&t=NuSsor7.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:14:21,077 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:14:21] "POST /socket.io/?EIO=4&transport=polling&t=NuSsu-3&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:14:46,094 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:14:46] "GET /socket.io/?EIO=4&transport=polling&t=NuSsu-3.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:14:46,219 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:14:46] "POST /socket.io/?EIO=4&transport=polling&t=NuSs_ou&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:15:11,244 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:15:11] "GET /socket.io/?EIO=4&transport=polling&t=NuSs_ov&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:15:14,756 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:15:14] "POST /socket.io/?EIO=4&transport=polling&t=NuSt5xm&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:15:39,781 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:15:39] "GET /socket.io/?EIO=4&transport=polling&t=NuSt5xn&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:15:39,910 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:15:39] "POST /socket.io/?EIO=4&transport=polling&t=NuStCvr&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:16:04,935 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:16:04] "GET /socket.io/?EIO=4&transport=polling&t=NuStCvs&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:16:10,712 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:16:10] "POST /socket.io/?EIO=4&transport=polling&t=NuStJ2d&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:16:35,737 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:16:35] "GET /socket.io/?EIO=4&transport=polling&t=NuStJ2e&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:16:35,855 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:16:35] "POST /socket.io/?EIO=4&transport=polling&t=NuStQZ-&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:17:00,881 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:17:00] "GET /socket.io/?EIO=4&transport=polling&t=NuStQZ-.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:17:04,132 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:17:04] "POST /socket.io/?EIO=4&transport=polling&t=NuStWiz&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:17:29,157 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:17:29] "GET /socket.io/?EIO=4&transport=polling&t=NuStWi-&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:17:29,267 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:17:29] "POST /socket.io/?EIO=4&transport=polling&t=NuStdcY&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:17:54,292 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:17:54] "GET /socket.io/?EIO=4&transport=polling&t=NuStdcZ&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:17:57,175 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:17:57] "GET /qr-code/admin HTTP/1.1" 200 -
+2022-01-02 22:17:57,859 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:17:57] "POST /socket.io/?EIO=4&transport=polling&t=NuStjlc&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:18:00,074 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:00] "GET /socket.io/?EIO=4&transport=polling&t=NuStkVu HTTP/1.1" 200 -
+2022-01-02 22:18:02,906 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:02] "POST /socket.io/?EIO=4&transport=polling&t=NuStl9E&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:18:03,238 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:03] "GET /socket.io/?EIO=4&transport=polling&t=NuStl9F&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:18:22,885 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:22] "GET /socket.io/?EIO=4&transport=polling&t=NuStjld&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:18:25,094 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:25] "GET /socket.io/?EIO=4&transport=polling&t=NuStlwm&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:18:26,248 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:26] "POST /socket.io/?EIO=4&transport=polling&t=NuStqjm&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:18:28,176 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:28] "POST /socket.io/?EIO=4&transport=polling&t=NuStrGG&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:18:28,876 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:28] "GET /qr-code/admin/room HTTP/1.1" 200 -
+2022-01-02 22:18:31,546 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:31] "POST /qr-code/admin/room/2/number/4 HTTP/1.1" 200 -
+2022-01-02 22:18:34,462 (INFO) app.py:notify => Sendinf number M4 to room 2
+2022-01-02 22:18:34,463 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:34] "POST /socket.io/?EIO=4&transport=polling&t=NuStsq6&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:18:45,854 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:45] "GET /qr-client/room/2 HTTP/1.1" 200 -
+2022-01-02 22:18:48,935 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:48] "GET /socket.io/?EIO=4&transport=polling&t=NuStwPx HTTP/1.1" 200 -
+2022-01-02 22:18:51,255 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:51] "GET /socket.io/?EIO=4&transport=polling&t=NuStqjm.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:18:52,491 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:52] "POST /socket.io/?EIO=4&transport=polling&t=NuStx4r&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:18:52,495 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:52] "GET /socket.io/?EIO=4&transport=polling&t=NuStx4s&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:18:53,188 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:53] "GET /socket.io/?EIO=4&transport=polling&t=NuStrGH&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:18:53,839 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET /qr-code page
+2022-01-02 22:18:53,869 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:53] "GET /qr-code HTTP/1.1" 200 -
+2022-01-02 22:18:55,233 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:55] "POST /socket.io/?EIO=4&transport=polling&t=NuStxfF&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:18:56,748 (INFO) app.py:on_join => Joining room 2
+2022-01-02 22:18:56,748 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:56] "POST /socket.io/?EIO=4&transport=polling&t=NuStxyv&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:18:57,602 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:57] "POST /socket.io/?EIO=4&transport=polling&t=NuStyFq&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:18:58,673 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:18:58] "GET /static/assets/qr.webp HTTP/1.1" 200 -
+2022-01-02 22:19:00,081 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:00] "GET /static/assets/images/squaremodule.webp HTTP/1.1" 200 -
+2022-01-02 22:19:00,839 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:00] "GET /static/assets/images/gappedmodule.webp HTTP/1.1" 200 -
+2022-01-02 22:19:01,944 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:01] "GET /static/assets/images/circlemodule.webp HTTP/1.1" 200 -
+2022-01-02 22:19:03,262 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:03] "GET /static/assets/images/roundedmodule.webp HTTP/1.1" 200 -
+2022-01-02 22:19:03,986 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:03] "GET /static/assets/images/verticalbarmodule.webp HTTP/1.1" 200 -
+2022-01-02 22:19:05,016 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:05] "GET /static/assets/images/horizontalbarmodule.webp HTTP/1.1" 200 -
+2022-01-02 22:19:08,632 (INFO) app_qr.py:qr => IP: 127.0.0.1 POST /qr-code page
+2022-01-02 22:19:09,360 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:09] "POST /qr-code HTTP/1.1" 200 -
+2022-01-02 22:19:13,961 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:13] "GET /socket.io/?EIO=4&transport=polling&t=NuStxyw&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:19:16,822 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:16] "POST /socket.io/?EIO=4&transport=polling&t=NuSu1Bx&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:19:20,258 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:20] "GET /socket.io/?EIO=4&transport=polling&t=NuStxfG&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:19:22,627 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:22] "GET /socket.io/?EIO=4&transport=polling&t=NuStyFs&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:19:23,117 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:23] "POST /socket.io/?EIO=4&transport=polling&t=NuSu2kK&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:19:25,673 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:25] "POST /socket.io/?EIO=4&transport=polling&t=NuSu3Jr&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:19:27,437 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:27] "GET /qr-code/admin/room HTTP/1.1" 200 -
+2022-01-02 22:19:30,009 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:30] "POST /qr-code/admin/room/2/number/5 HTTP/1.1" 200 -
+2022-01-02 22:19:32,640 (INFO) app.py:notify => Sendinf number M5 to room 2
+2022-01-02 22:19:32,640 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:32] "POST /socket.io/?EIO=4&transport=polling&t=NuSu55V&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:19:32,642 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:32] "GET /socket.io/?EIO=4&transport=polling&t=NuSu1By&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:19:41,848 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:41] "GET /socket.io/?EIO=4&transport=polling&t=NuSu5ll&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:19:44,657 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:44] "POST /socket.io/?EIO=4&transport=polling&t=NuSu7_X&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:19:47,601 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:47] "POST /qr-code/admin/room/2/number/10 HTTP/1.1" 200 -
+2022-01-02 22:19:48,143 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:48] "GET /socket.io/?EIO=4&transport=polling&t=NuSu2kK.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:19:50,381 (INFO) app.py:notify => Sendinf number M10 to room 2
+2022-01-02 22:19:50,381 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:50] "POST /socket.io/?EIO=4&transport=polling&t=NuSu9OP&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:19:50,383 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:50] "GET /socket.io/?EIO=4&transport=polling&t=NuSu7_Y&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:19:50,694 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:50] "GET /socket.io/?EIO=4&transport=polling&t=NuSu3Js&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:19:51,233 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:51] "POST /socket.io/?EIO=4&transport=polling&t=NuSu9YP&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:19:53,958 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:19:53] "POST /socket.io/?EIO=4&transport=polling&t=NuSuA9x&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:20:00,784 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:00] "POST /qr-code/admin/room/2/number/1 HTTP/1.1" 200 -
+2022-01-02 22:20:03,385 (INFO) app.py:notify => Sendinf number M1 to room 2
+2022-01-02 22:20:03,385 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:03] "POST /socket.io/?EIO=4&transport=polling&t=NuSuCcM&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:20:03,387 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:03] "GET /socket.io/?EIO=4&transport=polling&t=NuSuA5I&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:20:09,683 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:09] "GET /socket.io/?EIO=4&transport=polling&t=NuSuDG9&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:20:12,494 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:12] "POST /socket.io/?EIO=4&transport=polling&t=NuSuEoV&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:20:16,258 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:16] "GET /socket.io/?EIO=4&transport=polling&t=NuSu9YQ&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:20:18,971 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:18] "GET /socket.io/?EIO=4&transport=polling&t=NuSuA9y&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:20:19,155 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:19] "POST /socket.io/?EIO=4&transport=polling&t=NuSuGPM&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:20:22,114 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:22] "GET /qr-client/room/2 HTTP/1.1" 200 -
+2022-01-02 22:20:22,435 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:22] "POST /socket.io/?EIO=4&transport=polling&t=NuSuH55&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:20:24,918 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:24] "GET /socket.io/?EIO=4&transport=polling&t=NuSuHrm HTTP/1.1" 200 -
+2022-01-02 22:20:27,786 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:27] "POST /socket.io/?EIO=4&transport=polling&t=NuSuIWi&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:20:28,093 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:28] "GET /socket.io/?EIO=4&transport=polling&t=NuSuIWk&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:20:31,209 (INFO) app.py:on_join => Joining room 2
+2022-01-02 22:20:31,209 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:31] "POST /socket.io/?EIO=4&transport=polling&t=NuSuJIG&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:20:37,520 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:37] "GET /socket.io/?EIO=4&transport=polling&t=NuSuEoV.0&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:20:40,705 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:40] "POST /socket.io/?EIO=4&transport=polling&t=NuSuLbX&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:20:44,174 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:44] "GET /socket.io/?EIO=4&transport=polling&t=NuSuGPM.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:20:47,458 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:47] "GET /socket.io/?EIO=4&transport=polling&t=NuSuH56&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:20:48,890 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:48] "POST /socket.io/?EIO=4&transport=polling&t=NuSuNE7&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:20:49,944 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:49] "GET /socket.io/?EIO=4&transport=polling&t=NuSuJIH&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:20:51,985 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:51] "POST /socket.io/?EIO=4&transport=polling&t=NuSuO1R&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:20:54,743 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:54] "POST /socket.io/?EIO=4&transport=polling&t=NuSuOeY&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:20:56,396 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:20:56] "POST /qr-code/admin/room/2/number/31 HTTP/1.1" 200 -
+2022-01-02 22:21:00,164 (INFO) app.py:notify => Sendinf number M31 to room 2
+2022-01-02 22:21:00,165 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:00] "POST /socket.io/?EIO=4&transport=polling&t=NuSuQBQ&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:21:00,167 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:00] "GET /socket.io/?EIO=4&transport=polling&t=NuSuLbY&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:21:00,167 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:00] "GET /socket.io/?EIO=4&transport=polling&t=NuSuOea&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:21:05,731 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:05] "GET /socket.io/?EIO=4&transport=polling&t=NuSuR8z&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:21:09,605 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:09] "POST /socket.io/?EIO=4&transport=polling&t=NuSuSUo&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:21:13,915 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:13] "GET /socket.io/?EIO=4&transport=polling&t=NuSuNEA&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:21:17,010 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:17] "GET /socket.io/?EIO=4&transport=polling&t=NuSuO1S&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:21:18,731 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:18] "POST /socket.io/?EIO=4&transport=polling&t=NuSuUUo&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:21:19,769 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:19] "GET /socket.io/?EIO=4&transport=polling&t=NuSuR9P&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:21:21,732 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:21] "POST /socket.io/?EIO=4&transport=polling&t=NuSuVFI&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:21:24,477 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:24] "GET /qr-client/room/2 HTTP/1.1" 200 -
+2022-01-02 22:21:24,977 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:24] "POST /socket.io/?EIO=4&transport=polling&t=NuSuVwk&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:21:28,821 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:28] "GET /socket.io/?EIO=4&transport=polling&t=NuSuXDu HTTP/1.1" 200 -
+2022-01-02 22:21:32,629 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:32] "POST /socket.io/?EIO=4&transport=polling&t=NuSuY7W&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:21:32,984 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:32] "GET /socket.io/?EIO=4&transport=polling&t=NuSuY7Y&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:21:34,631 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:34] "GET /socket.io/?EIO=4&transport=polling&t=NuSuSUp&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:21:37,333 (INFO) app.py:on_join => Joining room 2
+2022-01-02 22:21:37,333 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:37] "POST /socket.io/?EIO=4&transport=polling&t=NuSuZ8g&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:21:39,029 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:39] "POST /socket.io/?EIO=4&transport=polling&t=NuSuZYf&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:21:43,745 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:43] "GET /socket.io/?EIO=4&transport=polling&t=NuSuUUp&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:21:46,752 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:46] "GET /socket.io/?EIO=4&transport=polling&t=NuSuVFL&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:21:47,846 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:47] "POST /socket.io/?EIO=4&transport=polling&t=NuSubmr&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:21:49,994 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:49] "GET /socket.io/?EIO=4&transport=polling&t=NuSuVwr&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:21:50,980 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:50] "POST /socket.io/?EIO=4&transport=polling&t=NuSucVi&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:21:53,847 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:53] "GET /socket.io/?EIO=4&transport=polling&t=NuSuZ8i&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:21:54,045 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:54] "POST /socket.io/?EIO=4&transport=polling&t=NuSudIP&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:21:57,760 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:21:57] "POST /socket.io/?EIO=4&transport=polling&t=NuSueFM&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:22:04,049 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:04] "GET /socket.io/?EIO=4&transport=polling&t=NuSuZYg&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:22:07,886 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:07] "POST /socket.io/?EIO=4&transport=polling&t=NuSugjt&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:22:12,872 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:12] "GET /socket.io/?EIO=4&transport=polling&t=NuSubms&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:22:16,005 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:16] "GET /socket.io/?EIO=4&transport=polling&t=NuSucVk&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:22:16,986 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:16] "POST /socket.io/?EIO=4&transport=polling&t=NuSuits&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:22:19,071 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:19] "GET /socket.io/?EIO=4&transport=polling&t=NuSudIQ&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:22:20,234 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:20] "POST /socket.io/?EIO=4&transport=polling&t=NuSujeh&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:22:22,784 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:22] "GET /socket.io/?EIO=4&transport=polling&t=NuSueFN&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:22:23,294 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:23] "POST /socket.io/?EIO=4&transport=polling&t=NuSukP4&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:22:27,050 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:27] "POST /socket.io/?EIO=4&transport=polling&t=NuSulIy&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:22:32,912 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:32] "GET /socket.io/?EIO=4&transport=polling&t=NuSugjv&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:22:36,745 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:36] "POST /socket.io/?EIO=4&transport=polling&t=NuSunmt&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:22:42,011 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:42] "GET /socket.io/?EIO=4&transport=polling&t=NuSuitu&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:22:45,260 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:45] "GET /socket.io/?EIO=4&transport=polling&t=NuSujej&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:22:47,163 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:47] "POST /socket.io/?EIO=4&transport=polling&t=NuSuqBR&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:22:47,955 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:47] "[33mGET / HTTP/1.1[0m" 404 -
+2022-01-02 22:22:48,320 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:48] "GET /socket.io/?EIO=4&transport=polling&t=NuSukP5&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:22:51,528 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET /qr-code page
+2022-01-02 22:22:51,534 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:51] "GET /qr-code HTTP/1.1" 200 -
+2022-01-02 22:22:52,076 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:52] "GET /socket.io/?EIO=4&transport=polling&t=NuSulJ4&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:22:52,560 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:52] "POST /socket.io/?EIO=4&transport=polling&t=NuSuqoB&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:22:55,882 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:55] "POST /socket.io/?EIO=4&transport=polling&t=NuSuraJ&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:22:57,559 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:22:57] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-02 22:23:00,227 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:00] "POST /socket.io/?EIO=4&transport=polling&t=NuSusY1&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:23:01,770 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:01] "GET /socket.io/?EIO=4&transport=polling&t=NuSunmu&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:23:04,260 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:04] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-02 22:23:05,712 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:05] "POST /socket.io/?EIO=4&transport=polling&t=NuSuupv&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:23:09,573 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:09] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-02 22:23:12,189 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:12] "GET /socket.io/?EIO=4&transport=polling&t=NuSuqBS&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:23:13,283 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:13] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-02 22:23:16,377 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:16] "POST /socket.io/?EIO=4&transport=polling&t=NuSuxMk&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:23:17,560 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:17] "GET /socket.io/?EIO=4&transport=polling&t=NuSuqoD&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:23:20,283 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:20] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-02 22:23:20,907 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:20] "GET /socket.io/?EIO=4&transport=polling&t=NuSuraK&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:23:21,999 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:21] "POST /socket.io/?EIO=4&transport=polling&t=NuSuygd&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:23:25,228 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:25] "GET /socket.io/?EIO=4&transport=polling&t=NuSusY4&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:23:25,693 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:25] "POST /socket.io/?EIO=4&transport=polling&t=NuSuzWx&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:23:29,641 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:29] "POST /socket.io/?EIO=4&transport=polling&t=NuSu-ZE&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:23:30,738 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:30] "GET /socket.io/?EIO=4&transport=polling&t=NuSuupx&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:23:33,528 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:33] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-02 22:23:34,830 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:34] "POST /socket.io/?EIO=4&transport=polling&t=NuSu_ua&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:23:38,717 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:38] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-02 22:23:41,400 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:41] "GET /socket.io/?EIO=4&transport=polling&t=NuSuxMm&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:23:45,762 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:45] "POST /socket.io/?EIO=4&transport=polling&t=NuSv2VV&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:23:47,024 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:47] "GET /socket.io/?EIO=4&transport=polling&t=NuSuygg&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:23:50,714 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:50] "GET /socket.io/?EIO=4&transport=polling&t=NuSuzWy&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:23:50,823 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:50] "POST /socket.io/?EIO=4&transport=polling&t=NuSv3sx&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:23:54,603 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:54] "POST /socket.io/?EIO=4&transport=polling&t=NuSv4nF&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:23:54,665 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:54] "GET /socket.io/?EIO=4&transport=polling&t=NuSu-ZH&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:23:58,586 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:58] "POST /socket.io/?EIO=4&transport=polling&t=NuSv5kb&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:23:59,854 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:23:59] "GET /socket.io/?EIO=4&transport=polling&t=NuSu_ub&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:24:04,018 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:04] "POST /socket.io/?EIO=4&transport=polling&t=NuSv6_b&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:24:10,788 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:10] "GET /socket.io/?EIO=4&transport=polling&t=NuSv2VW&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:24:14,614 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:14] "POST /socket.io/?EIO=4&transport=polling&t=NuSv9gH&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:24:15,849 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:15] "GET /socket.io/?EIO=4&transport=polling&t=NuSv3sz&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:24:19,584 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:19] "POST /socket.io/?EIO=4&transport=polling&t=NuSvAvZ&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:24:19,624 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:19] "GET /socket.io/?EIO=4&transport=polling&t=NuSv4nI&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:24:23,371 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:23] "POST /socket.io/?EIO=4&transport=polling&t=NuSvBqQ&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:24:23,604 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:23] "GET /socket.io/?EIO=4&transport=polling&t=NuSv5kd&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:24:27,469 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:27] "POST /socket.io/?EIO=4&transport=polling&t=NuSvCpt&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:24:29,044 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:29] "GET /socket.io/?EIO=4&transport=polling&t=NuSv6_d&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:24:33,274 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:33] "POST /socket.io/?EIO=4&transport=polling&t=NuSvE7Q&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:24:39,639 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:39] "GET /socket.io/?EIO=4&transport=polling&t=NuSv9gI&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:24:43,817 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:43] "POST /socket.io/?EIO=4&transport=polling&t=NuSvGj5&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:24:44,610 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:44] "GET /socket.io/?EIO=4&transport=polling&t=NuSvAva&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:24:48,367 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:48] "POST /socket.io/?EIO=4&transport=polling&t=NuSvHwm&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:24:48,395 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:48] "GET /socket.io/?EIO=4&transport=polling&t=NuSvBqS&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:24:52,168 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:52] "POST /socket.io/?EIO=4&transport=polling&t=NuSvIs3&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:24:52,494 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:52] "GET /socket.io/?EIO=4&transport=polling&t=NuSvCpu&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:24:56,655 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:56] "POST /socket.io/?EIO=4&transport=polling&t=NuSvJry&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:24:58,301 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:24:58] "GET /socket.io/?EIO=4&transport=polling&t=NuSvE7R&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:25:02,574 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:02] "POST /socket.io/?EIO=4&transport=polling&t=NuSvLGe&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:25:08,834 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:08] "GET /socket.io/?EIO=4&transport=polling&t=NuSvGj6&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:25:12,649 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:12] "POST /socket.io/?EIO=4&transport=polling&t=NuSvNrV&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:25:13,387 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:13] "GET /socket.io/?EIO=4&transport=polling&t=NuSvHwn&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:25:17,184 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:17] "GET /socket.io/?EIO=4&transport=polling&t=NuSvIs4&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:25:17,226 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:17] "POST /socket.io/?EIO=4&transport=polling&t=NuSvOyY&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:25:21,674 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:21] "GET /socket.io/?EIO=4&transport=polling&t=NuSvJr-&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:25:22,024 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:22] "POST /socket.io/?EIO=4&transport=polling&t=NuSvPty&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:25:25,538 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:25] "POST /socket.io/?EIO=4&transport=polling&t=NuSvQ-F&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:25:27,600 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:27] "GET /socket.io/?EIO=4&transport=polling&t=NuSvLGf&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:25:31,453 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:31] "POST /socket.io/?EIO=4&transport=polling&t=NuSvSQa&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:25:37,674 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:37] "GET /socket.io/?EIO=4&transport=polling&t=NuSvNrW&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:25:41,466 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:41] "POST /socket.io/?EIO=4&transport=polling&t=NuSvUtm&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:25:42,252 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:42] "GET /socket.io/?EIO=4&transport=polling&t=NuSvOya&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:25:47,044 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:47] "GET /socket.io/?EIO=4&transport=polling&t=NuSvPt-&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:25:48,152 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:48] "POST /socket.io/?EIO=4&transport=polling&t=NuSvV_a&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:25:50,554 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:50] "GET /socket.io/?EIO=4&transport=polling&t=NuSvQ-I&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:25:51,056 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:51] "POST /socket.io/?EIO=4&transport=polling&t=NuSvXAM&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:25:54,429 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:54] "POST /socket.io/?EIO=4&transport=polling&t=NuSvY1C&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:25:56,479 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:25:56] "GET /socket.io/?EIO=4&transport=polling&t=NuSvSQc&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:26:00,270 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:00] "POST /socket.io/?EIO=4&transport=polling&t=NuSvZTq&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:26:06,492 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:06] "GET /socket.io/?EIO=4&transport=polling&t=NuSvUtn&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:26:10,214 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:10] "POST /socket.io/?EIO=4&transport=polling&t=NuSvbw3&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:26:13,164 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:13] "GET /socket.io/?EIO=4&transport=polling&t=NuSvV_b&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:26:16,074 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:16] "GET /socket.io/?EIO=4&transport=polling&t=NuSvXAN&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:26:17,965 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:17] "POST /socket.io/?EIO=4&transport=polling&t=NuSvdYP&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:26:19,456 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:19] "GET /socket.io/?EIO=4&transport=polling&t=NuSvY1D&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:26:21,510 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:21] "POST /socket.io/?EIO=4&transport=polling&t=NuSveGo&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:26:24,272 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:24] "POST /socket.io/?EIO=4&transport=polling&t=NuSvf6D&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:26:25,296 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:25] "GET /socket.io/?EIO=4&transport=polling&t=NuSvZTr&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:26:30,772 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:30] "POST /socket.io/?EIO=4&transport=polling&t=NuSvgWB&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:26:35,239 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:35] "GET /socket.io/?EIO=4&transport=polling&t=NuSvbw4&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:26:39,050 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:39] "POST /socket.io/?EIO=4&transport=polling&t=NuSvixS&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:26:42,991 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:42] "GET /socket.io/?EIO=4&transport=polling&t=NuSvdYQ&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:26:46,535 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:46] "GET /socket.io/?EIO=4&transport=polling&t=NuSveGq&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:26:46,876 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:46] "POST /socket.io/?EIO=4&transport=polling&t=NuSvkqj&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:26:49,294 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:49] "GET /socket.io/?EIO=4&transport=polling&t=NuSvf6N&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:26:50,592 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:50] "POST /socket.io/?EIO=4&transport=polling&t=NuSvlkd&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:26:53,517 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:53] "POST /socket.io/?EIO=4&transport=polling&t=NuSvmN2&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:26:55,798 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:26:55] "GET /socket.io/?EIO=4&transport=polling&t=NuSvgWD&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:27:00,072 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:00] "POST /socket.io/?EIO=4&transport=polling&t=NuSvnyV&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:27:04,076 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:04] "GET /socket.io/?EIO=4&transport=polling&t=NuSvixT&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:27:08,222 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:08] "POST /socket.io/?EIO=4&transport=polling&t=NuSvpzx&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:27:11,902 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:11] "GET /socket.io/?EIO=4&transport=polling&t=NuSvkqk&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:27:15,614 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:15] "GET /socket.io/?EIO=4&transport=polling&t=NuSvlke&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:27:15,633 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:15] "POST /socket.io/?EIO=4&transport=polling&t=NuSvruC&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:27:18,534 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:18] "GET /socket.io/?EIO=4&transport=polling&t=NuSvmN3&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:27:19,933 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:19] "POST /socket.io/?EIO=4&transport=polling&t=NuSvsol&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:27:22,514 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:22] "POST /socket.io/?EIO=4&transport=polling&t=NuSvtVz&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:27:25,098 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:25] "GET /socket.io/?EIO=4&transport=polling&t=NuSvnyX&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:27:28,800 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:28] "POST /socket.io/?EIO=4&transport=polling&t=NuSvv6T&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:27:33,248 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:33] "GET /socket.io/?EIO=4&transport=polling&t=NuSvpzy&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:27:37,458 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:37] "POST /socket.io/?EIO=4&transport=polling&t=NuSvx5d&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:27:40,658 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:40] "GET /socket.io/?EIO=4&transport=polling&t=NuSvruD&sid=EruhsJMMsIHj3S4RAAAC HTTP/1.1" 200 -
+2022-01-02 22:27:41,635 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:41] "POST /socket.io/?EIO=4&transport=polling&t=NuSvyMO&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:27:41,636 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:41] "GET /socket.io/?EIO=4&transport=polling&t=NuSvv6U&sid=9IlxjglgOHqtnX8tAAAE HTTP/1.1" 200 -
+2022-01-02 22:27:44,959 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:44] "GET /socket.io/?EIO=4&transport=polling&t=NuSvsoo&sid=O2vSHskpfOBoYKXgAAAG HTTP/1.1" 200 -
+2022-01-02 22:27:47,540 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:27:47] "GET /socket.io/?EIO=4&transport=polling&t=NuSvtV_&sid=dUa5URAattbWHgwPAAAI HTTP/1.1" 200 -
+2022-01-02 22:28:02,484 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:28:02] "GET /socket.io/?EIO=4&transport=polling&t=NuSvx5e&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:28:02,632 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:28:02] "POST /socket.io/?EIO=4&transport=polling&t=NuSw2Em&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:28:27,658 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:28:27] "GET /socket.io/?EIO=4&transport=polling&t=NuSw2En&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:28:31,568 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:28:31] "POST /socket.io/?EIO=4&transport=polling&t=NuSw8Ny&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:28:56,577 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:28:56] "GET /socket.io/?EIO=4&transport=polling&t=NuSw8Nz&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:28:56,782 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:28:56] "POST /socket.io/?EIO=4&transport=polling&t=NuSwFSd&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:29:21,807 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:29:21] "GET /socket.io/?EIO=4&transport=polling&t=NuSwFSg&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:29:26,782 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:29:26] "POST /socket.io/?EIO=4&transport=polling&t=NuSwLcC&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:29:51,807 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:29:51] "GET /socket.io/?EIO=4&transport=polling&t=NuSwLcE&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:29:51,946 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:29:51] "POST /socket.io/?EIO=4&transport=polling&t=NuSwSwn&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:30:16,972 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:30:16] "GET /socket.io/?EIO=4&transport=polling&t=NuSwSwp&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:30:23,299 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:30:23] "POST /socket.io/?EIO=4&transport=polling&t=NuSwZ4D&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:30:48,324 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:30:48] "GET /socket.io/?EIO=4&transport=polling&t=NuSwZ4F&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:30:48,466 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:30:48] "POST /socket.io/?EIO=4&transport=polling&t=NuSwgju&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:31:13,492 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:31:13] "GET /socket.io/?EIO=4&transport=polling&t=NuSwgjv&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:31:17,722 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:31:17] "POST /socket.io/?EIO=4&transport=polling&t=NuSwmto&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:31:42,745 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:31:42] "GET /socket.io/?EIO=4&transport=polling&t=NuSwmtu&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:31:42,885 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:31:42] "POST /socket.io/?EIO=4&transport=polling&t=NuSwu0C&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:32:07,911 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:32:07] "GET /socket.io/?EIO=4&transport=polling&t=NuSwu0D&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:32:14,791 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:32:14] "POST /socket.io/?EIO=4&transport=polling&t=NuSw-9a&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:32:39,818 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:32:39] "GET /socket.io/?EIO=4&transport=polling&t=NuSw-9b&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:32:39,957 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:32:39] "POST /socket.io/?EIO=4&transport=polling&t=NuSx5xw&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:33:04,983 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:33:04] "GET /socket.io/?EIO=4&transport=polling&t=NuSx5xy&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:33:08,945 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:33:08] "POST /socket.io/?EIO=4&transport=polling&t=NuSxC59&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:33:33,971 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:33:33] "GET /socket.io/?EIO=4&transport=polling&t=NuSxC5B&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:33:34,117 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:33:34] "POST /socket.io/?EIO=4&transport=polling&t=NuSxJAD&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:33:59,139 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:33:59] "GET /socket.io/?EIO=4&transport=polling&t=NuSxJAE&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:34:06,348 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:34:06] "POST /socket.io/?EIO=4&transport=polling&t=NuSxPJU&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:34:31,374 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:34:31] "GET /socket.io/?EIO=4&transport=polling&t=NuSxPJV&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:34:31,524 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:34:31] "POST /socket.io/?EIO=4&transport=polling&t=NuSxXBA&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:34:56,550 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:34:56] "GET /socket.io/?EIO=4&transport=polling&t=NuSxXBB&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:35:00,559 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:35:00] "POST /socket.io/?EIO=4&transport=polling&t=NuSxdKY&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:35:25,584 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:35:25] "GET /socket.io/?EIO=4&transport=polling&t=NuSxdKa&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:35:25,726 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:35:25] "POST /socket.io/?EIO=4&transport=polling&t=NuSxkQ8&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:35:50,752 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:35:50] "GET /socket.io/?EIO=4&transport=polling&t=NuSxkQ9&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:35:57,631 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:35:57] "POST /socket.io/?EIO=4&transport=polling&t=NuSxqZR&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:36:22,657 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:36:22] "GET /socket.io/?EIO=4&transport=polling&t=NuSxqZT&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:36:22,828 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:36:22] "POST /socket.io/?EIO=4&transport=polling&t=NuSxyMC&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:36:47,854 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:36:47] "GET /socket.io/?EIO=4&transport=polling&t=NuSxyMD&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:36:55,275 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:36:55] "POST /socket.io/?EIO=4&transport=polling&t=NuSy2Vw&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:37:20,301 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:37:20] "GET /socket.io/?EIO=4&transport=polling&t=NuSy2WE&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:37:20,473 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:37:20] "POST /socket.io/?EIO=4&transport=polling&t=NuSyAQz&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:37:45,499 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:37:45] "GET /socket.io/?EIO=4&transport=polling&t=NuSyAR0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:37:50,397 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:37:50] "POST /socket.io/?EIO=4&transport=polling&t=NuSyGaR&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:38:15,414 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:38:15] "GET /socket.io/?EIO=4&transport=polling&t=NuSyGaS&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:38:15,562 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:38:15] "POST /socket.io/?EIO=4&transport=polling&t=NuSyNtm&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:38:40,587 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:38:40] "GET /socket.io/?EIO=4&transport=polling&t=NuSyNtn&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:38:46,194 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:38:46] "POST /socket.io/?EIO=4&transport=polling&t=NuSyU1D&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:39:11,220 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:39:11] "GET /socket.io/?EIO=4&transport=polling&t=NuSyU1E&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:39:11,444 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:39:11] "POST /socket.io/?EIO=4&transport=polling&t=NuSybWi&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:39:36,470 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:39:36] "GET /socket.io/?EIO=4&transport=polling&t=NuSybWk&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:39:44,361 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:39:44] "POST /socket.io/?EIO=4&transport=polling&t=NuSyhgj&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:40:09,387 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:40:09] "GET /socket.io/?EIO=4&transport=polling&t=NuSyhgk&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:40:09,544 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:40:09] "POST /socket.io/?EIO=4&transport=polling&t=NuSypik&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:40:34,570 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:40:34] "GET /socket.io/?EIO=4&transport=polling&t=NuSypil&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:40:39,430 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:40:39] "POST /socket.io/?EIO=4&transport=polling&t=NuSyvr_&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:41:04,455 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:41:04] "GET /socket.io/?EIO=4&transport=polling&t=NuSyvs0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:41:04,608 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:41:04] "POST /socket.io/?EIO=4&transport=polling&t=NuSz195&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:41:29,634 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:41:29] "GET /socket.io/?EIO=4&transport=polling&t=NuSz196&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:41:33,645 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:41:33] "POST /socket.io/?EIO=4&transport=polling&t=NuSz7IT&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:41:58,671 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:41:58] "GET /socket.io/?EIO=4&transport=polling&t=NuSz7IV&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:41:58,828 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:41:58] "POST /socket.io/?EIO=4&transport=polling&t=NuSzEOF&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:42:23,853 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:42:23] "GET /socket.io/?EIO=4&transport=polling&t=NuSzEOH&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:42:29,225 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:42:29] "POST /socket.io/?EIO=4&transport=polling&t=NuSzKXI&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:42:54,234 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:42:54] "GET /socket.io/?EIO=4&transport=polling&t=NuSzKXJ&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:42:54,349 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:42:54] "POST /socket.io/?EIO=4&transport=polling&t=NuSzRxx&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:43:19,374 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:43:19] "GET /socket.io/?EIO=4&transport=polling&t=NuSzRxy&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:43:22,325 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:43:22] "POST /socket.io/?EIO=4&transport=polling&t=NuSzY4t&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:43:47,350 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:43:47] "GET /socket.io/?EIO=4&transport=polling&t=NuSzY4u&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:43:47,481 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:43:47] "POST /socket.io/?EIO=4&transport=polling&t=NuSzew8&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:44:12,503 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:44:12] "GET /socket.io/?EIO=4&transport=polling&t=NuSzew8.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:44:15,989 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:44:15] "POST /socket.io/?EIO=4&transport=polling&t=NuSzl2z&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:44:41,014 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:44:41] "GET /socket.io/?EIO=4&transport=polling&t=NuSzl2-&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:44:41,134 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:44:41] "POST /socket.io/?EIO=4&transport=polling&t=NuSzs0U&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:45:06,160 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:45:06] "GET /socket.io/?EIO=4&transport=polling&t=NuSzs0V&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:45:09,676 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:45:09] "POST /socket.io/?EIO=4&transport=polling&t=NuSzy9M&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:45:34,702 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:45:34] "GET /socket.io/?EIO=4&transport=polling&t=NuSzy9N&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:45:34,825 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:45:34] "POST /socket.io/?EIO=4&transport=polling&t=NuS-37O&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:45:59,850 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:45:59] "GET /socket.io/?EIO=4&transport=polling&t=NuS-37O.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:46:02,787 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:46:02] "POST /socket.io/?EIO=4&transport=polling&t=NuS-9GG&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:46:27,812 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:46:27] "GET /socket.io/?EIO=4&transport=polling&t=NuS-9GH&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:46:27,929 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:46:27] "POST /socket.io/?EIO=4&transport=polling&t=NuS-G57&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:46:52,954 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:46:52] "GET /socket.io/?EIO=4&transport=polling&t=NuS-G58&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:46:56,077 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:46:56] "POST /socket.io/?EIO=4&transport=polling&t=NuS-MDx&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:47:21,093 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:47:21] "GET /socket.io/?EIO=4&transport=polling&t=NuS-MDx.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:47:21,210 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:47:21] "POST /socket.io/?EIO=4&transport=polling&t=NuS-T5e&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:47:46,236 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:47:46] "GET /socket.io/?EIO=4&transport=polling&t=NuS-T5f&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:47:52,077 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:47:52] "POST /socket.io/?EIO=4&transport=polling&t=NuS-ZEV&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:48:17,103 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:48:17] "GET /socket.io/?EIO=4&transport=polling&t=NuS-ZEW&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:48:17,216 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:48:17] "POST /socket.io/?EIO=4&transport=polling&t=NuS-gmn&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:48:42,242 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:48:42] "GET /socket.io/?EIO=4&transport=polling&t=NuS-gmn.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:48:45,586 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:48:45] "POST /socket.io/?EIO=4&transport=polling&t=NuS-mvr&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:49:10,611 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:49:10] "GET /socket.io/?EIO=4&transport=polling&t=NuS-mvs&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:49:10,730 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:49:10] "POST /socket.io/?EIO=4&transport=polling&t=NuS-tqx&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:49:35,756 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:49:35] "GET /socket.io/?EIO=4&transport=polling&t=NuS-tqz&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:49:38,625 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:49:38] "POST /socket.io/?EIO=4&transport=polling&t=NuS-zzK&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:50:03,651 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:50:03] "GET /socket.io/?EIO=4&transport=polling&t=NuS-zzL&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:50:03,765 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:50:03] "POST /socket.io/?EIO=4&transport=polling&t=NuS_4nc&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:50:28,790 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:50:28] "GET /socket.io/?EIO=4&transport=polling&t=NuS_4nc.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:50:31,738 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:50:31] "POST /socket.io/?EIO=4&transport=polling&t=NuS_Awb&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:50:56,763 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:50:56] "GET /socket.io/?EIO=4&transport=polling&t=NuS_Awc&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:50:56,883 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:50:56] "POST /socket.io/?EIO=4&transport=polling&t=NuS_Hla&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:51:21,903 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:51:21] "GET /socket.io/?EIO=4&transport=polling&t=NuS_Hla.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:51:24,818 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:51:24] "POST /socket.io/?EIO=4&transport=polling&t=NuS_NuI&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:51:49,844 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:51:49] "GET /socket.io/?EIO=4&transport=polling&t=NuS_NuI.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:51:49,961 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:51:49] "POST /socket.io/?EIO=4&transport=polling&t=NuS_Uiu&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:52:14,984 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:52:14] "GET /socket.io/?EIO=4&transport=polling&t=NuS_Uiv&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:52:20,746 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:52:20] "POST /socket.io/?EIO=4&transport=polling&t=NuS_arm&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:52:45,772 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:52:45] "GET /socket.io/?EIO=4&transport=polling&t=NuS_arn&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:52:45,897 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:52:45] "POST /socket.io/?EIO=4&transport=polling&t=NuS_iMu&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:53:10,922 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:53:10] "GET /socket.io/?EIO=4&transport=polling&t=NuS_iMv&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:53:13,960 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:53:13] "POST /socket.io/?EIO=4&transport=polling&t=NuS_oVj&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:53:38,985 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:53:38] "GET /socket.io/?EIO=4&transport=polling&t=NuS_oVj.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:53:39,099 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:53:39] "POST /socket.io/?EIO=4&transport=polling&t=NuS_vMB&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:54:04,125 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:54:04] "GET /socket.io/?EIO=4&transport=polling&t=NuS_vMC&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:54:07,259 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:54:07] "POST /socket.io/?EIO=4&transport=polling&t=NuS__V3&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:54:32,284 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:54:32] "GET /socket.io/?EIO=4&transport=polling&t=NuS__V4&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:54:32,409 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:54:32] "POST /socket.io/?EIO=4&transport=polling&t=NuT06N9&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:54:57,433 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:54:57] "GET /socket.io/?EIO=4&transport=polling&t=NuT06NA&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:55:00,524 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:55:00] "POST /socket.io/?EIO=4&transport=polling&t=NuT0CVw&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:55:25,549 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:55:25] "GET /socket.io/?EIO=4&transport=polling&t=NuT0CVx&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:55:25,671 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:55:25] "POST /socket.io/?EIO=4&transport=polling&t=NuT0JNM&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:55:50,696 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:55:50] "GET /socket.io/?EIO=4&transport=polling&t=NuT0JNN&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:55:54,047 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:55:54] "POST /socket.io/?EIO=4&transport=polling&t=NuT0PWK&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:56:19,070 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:56:19] "GET /socket.io/?EIO=4&transport=polling&t=NuT0PWL&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:56:19,190 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:56:19] "POST /socket.io/?EIO=4&transport=polling&t=NuT0WRc&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:56:44,213 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:56:44] "GET /socket.io/?EIO=4&transport=polling&t=NuT0WRd&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:56:49,044 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:56:49] "POST /socket.io/?EIO=4&transport=polling&t=NuT0caV&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:57:14,064 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:57:14] "GET /socket.io/?EIO=4&transport=polling&t=NuT0caV.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:57:14,173 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:57:14] "POST /socket.io/?EIO=4&transport=polling&t=NuT0jsi&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:57:39,198 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:57:39] "GET /socket.io/?EIO=4&transport=polling&t=NuT0jsi.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:57:42,592 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:57:42] "POST /socket.io/?EIO=4&transport=polling&t=NuT0p_G&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:58:07,617 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:58:07] "GET /socket.io/?EIO=4&transport=polling&t=NuT0p_H&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:58:07,723 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:58:07] "POST /socket.io/?EIO=4&transport=polling&t=NuT0wxR&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:58:32,743 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:58:32] "GET /socket.io/?EIO=4&transport=polling&t=NuT0wxR.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:58:36,151 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:58:36] "POST /socket.io/?EIO=4&transport=polling&t=NuT1147&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:59:01,178 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:59:01] "GET /socket.io/?EIO=4&transport=polling&t=NuT1147.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:59:01,303 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:59:01] "POST /socket.io/?EIO=4&transport=polling&t=NuT180c&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:59:26,328 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:59:26] "GET /socket.io/?EIO=4&transport=polling&t=NuT180c.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:59:32,621 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:59:32] "POST /socket.io/?EIO=4&transport=polling&t=NuT1E9d&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:59:57,646 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:59:57] "GET /socket.io/?EIO=4&transport=polling&t=NuT1E9e&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 22:59:57,760 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 22:59:57] "POST /socket.io/?EIO=4&transport=polling&t=NuT1Lom&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:00:22,786 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:00:22] "GET /socket.io/?EIO=4&transport=polling&t=NuT1Lom.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:00:26,211 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:00:26] "POST /socket.io/?EIO=4&transport=polling&t=NuT1Rxk&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:00:51,212 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:00:51] "GET /socket.io/?EIO=4&transport=polling&t=NuT1Rxl&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:00:51,335 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:00:51] "POST /socket.io/?EIO=4&transport=polling&t=NuT1Yts&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:01:16,360 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:01:16] "GET /socket.io/?EIO=4&transport=polling&t=NuT1Ytu&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:01:19,416 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:01:19] "POST /socket.io/?EIO=4&transport=polling&t=NuT1f0f&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:01:44,442 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:01:44] "GET /socket.io/?EIO=4&transport=polling&t=NuT1f0g&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:01:44,553 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:01:44] "POST /socket.io/?EIO=4&transport=polling&t=NuT1ltO&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:02:09,578 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:02:09] "GET /socket.io/?EIO=4&transport=polling&t=NuT1ltP&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:02:14,474 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:02:14] "POST /socket.io/?EIO=4&transport=polling&t=NuT1s0N&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:02:39,499 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:02:39] "GET /socket.io/?EIO=4&transport=polling&t=NuT1s0N.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:02:39,612 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:02:39] "POST /socket.io/?EIO=4&transport=polling&t=NuT1zJj&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:03:04,634 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:03:04] "GET /socket.io/?EIO=4&transport=polling&t=NuT1zJj.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:03:07,618 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:03:07] "POST /socket.io/?EIO=4&transport=polling&t=NuT23SV&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:03:32,643 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:03:32] "GET /socket.io/?EIO=4&transport=polling&t=NuT23SW&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:03:32,757 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:03:32] "POST /socket.io/?EIO=4&transport=polling&t=NuT2AI3&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:03:57,782 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:03:57] "GET /socket.io/?EIO=4&transport=polling&t=NuT2AI5&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:04:00,755 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:04:00] "POST /socket.io/?EIO=4&transport=polling&t=NuT2GR0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:04:25,774 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:04:25] "GET /socket.io/?EIO=4&transport=polling&t=NuT2GR0.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:04:25,896 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:04:25] "POST /socket.io/?EIO=4&transport=polling&t=NuT2NGP&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:04:50,922 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:04:50] "GET /socket.io/?EIO=4&transport=polling&t=NuT2NGP.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:04:53,948 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:04:53] "POST /socket.io/?EIO=4&transport=polling&t=NuT2TPC&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:05:18,974 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:05:18] "GET /socket.io/?EIO=4&transport=polling&t=NuT2TPD&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:05:19,096 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:05:19] "POST /socket.io/?EIO=4&transport=polling&t=NuT2aFc&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:05:44,122 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:05:44] "GET /socket.io/?EIO=4&transport=polling&t=NuT2aFd&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:05:47,197 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:05:47] "POST /socket.io/?EIO=4&transport=polling&t=NuT2gOa&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:06:12,222 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:06:12] "GET /socket.io/?EIO=4&transport=polling&t=NuT2gOb&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:06:12,349 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:06:12] "POST /socket.io/?EIO=4&transport=polling&t=NuT2nFj&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:06:37,375 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:06:37] "GET /socket.io/?EIO=4&transport=polling&t=NuT2nFk&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:06:43,273 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:06:43] "POST /socket.io/?EIO=4&transport=polling&t=NuT2tOZ&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:07:08,299 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:07:08] "GET /socket.io/?EIO=4&transport=polling&t=NuT2tOa&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:07:08,430 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:07:08] "POST /socket.io/?EIO=4&transport=polling&t=NuT2-xz&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:07:33,455 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:07:33] "GET /socket.io/?EIO=4&transport=polling&t=NuT2-x-&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:07:36,717 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:07:36] "POST /socket.io/?EIO=4&transport=polling&t=NuT354p&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:08:01,743 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:08:01] "GET /socket.io/?EIO=4&transport=polling&t=NuT354q&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:08:01,846 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:08:01] "POST /socket.io/?EIO=4&transport=polling&t=NuT3B-a&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:08:26,871 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:08:26] "GET /socket.io/?EIO=4&transport=polling&t=NuT3B-a.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:08:32,735 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:08:32] "POST /socket.io/?EIO=4&transport=polling&t=NuT3I7f&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:08:57,761 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:08:57] "GET /socket.io/?EIO=4&transport=polling&t=NuT3I7g&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:08:57,884 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:08:57] "POST /socket.io/?EIO=4&transport=polling&t=NuT3PgA&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:09:22,909 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:09:22] "GET /socket.io/?EIO=4&transport=polling&t=NuT3PgC&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:09:28,331 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:09:28] "POST /socket.io/?EIO=4&transport=polling&t=NuT3Vp2&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:09:53,356 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:09:53] "GET /socket.io/?EIO=4&transport=polling&t=NuT3Vp2.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:09:53,473 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:09:53] "POST /socket.io/?EIO=4&transport=polling&t=NuT3dEl&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:10:18,498 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:10:18] "GET /socket.io/?EIO=4&transport=polling&t=NuT3dEm&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:10:21,544 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:10:21] "POST /socket.io/?EIO=4&transport=polling&t=NuT3jNj&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:10:46,558 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:10:46] "GET /socket.io/?EIO=4&transport=polling&t=NuT3jNk&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:10:46,682 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:10:46] "POST /socket.io/?EIO=4&transport=polling&t=NuT3qE9&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:11:11,707 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:11:11] "GET /socket.io/?EIO=4&transport=polling&t=NuT3qEA&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:11:14,801 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:11:14] "POST /socket.io/?EIO=4&transport=polling&t=NuT3wN0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:11:39,826 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:11:39] "GET /socket.io/?EIO=4&transport=polling&t=NuT3wN1&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:11:39,946 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:11:39] "POST /socket.io/?EIO=4&transport=polling&t=NuT41EN&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:12:04,971 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:12:04] "GET /socket.io/?EIO=4&transport=polling&t=NuT41EP&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:12:08,030 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:12:08] "POST /socket.io/?EIO=4&transport=polling&t=NuT47NG&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:12:33,054 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:12:33] "GET /socket.io/?EIO=4&transport=polling&t=NuT47NH&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:12:33,172 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:12:33] "POST /socket.io/?EIO=4&transport=polling&t=NuT4EE3&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:12:58,194 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:12:58] "GET /socket.io/?EIO=4&transport=polling&t=NuT4EE4&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:13:01,302 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:13:01] "POST /socket.io/?EIO=4&transport=polling&t=NuT4KMx&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:13:26,327 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:13:26] "GET /socket.io/?EIO=4&transport=polling&t=NuT4KMy&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:13:26,440 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:13:26] "POST /socket.io/?EIO=4&transport=polling&t=NuT4REO&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:13:51,465 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:13:51] "GET /socket.io/?EIO=4&transport=polling&t=NuT4REP&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:13:55,870 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:13:55] "POST /socket.io/?EIO=4&transport=polling&t=NuT4XNN&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:14:20,896 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:14:20] "GET /socket.io/?EIO=4&transport=polling&t=NuT4XNO&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:14:21,014 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:14:21] "POST /socket.io/?EIO=4&transport=polling&t=NuT4eZ6&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:14:46,040 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:14:46] "GET /socket.io/?EIO=4&transport=polling&t=NuT4eZ6.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:14:49,068 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:14:49] "POST /socket.io/?EIO=4&transport=polling&t=NuT4ki1&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:15:14,094 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:15:14] "GET /socket.io/?EIO=4&transport=polling&t=NuT4ki4&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:15:14,218 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:15:14] "POST /socket.io/?EIO=4&transport=polling&t=NuT4rYO&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:15:39,243 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:15:39] "GET /socket.io/?EIO=4&transport=polling&t=NuT4rYP&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:15:42,598 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:15:42] "POST /socket.io/?EIO=4&transport=polling&t=NuT4xhA&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:16:07,604 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:16:07] "GET /socket.io/?EIO=4&transport=polling&t=NuT4xhB&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:16:07,722 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:16:07] "POST /socket.io/?EIO=4&transport=polling&t=NuT52cQ&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:16:32,747 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:16:32] "GET /socket.io/?EIO=4&transport=polling&t=NuT52cR&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:16:35,980 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:16:35] "POST /socket.io/?EIO=4&transport=polling&t=NuT58lR&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:17:01,005 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:17:01] "GET /socket.io/?EIO=4&transport=polling&t=NuT58lS&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:17:01,137 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:17:01] "POST /socket.io/?EIO=4&transport=polling&t=NuT5Fe-&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:17:26,162 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:17:26] "GET /socket.io/?EIO=4&transport=polling&t=NuT5Fe_&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:17:29,408 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:17:29] "POST /socket.io/?EIO=4&transport=polling&t=NuT5Lnv&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:17:54,434 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:17:54] "GET /socket.io/?EIO=4&transport=polling&t=NuT5Lnw&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:17:54,539 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:17:54] "POST /socket.io/?EIO=4&transport=polling&t=NuT5ShR&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:18:19,565 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:18:19] "GET /socket.io/?EIO=4&transport=polling&t=NuT5ShS&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:18:24,367 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:18:24] "POST /socket.io/?EIO=4&transport=polling&t=NuT5YqR&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:18:49,392 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:18:49] "GET /socket.io/?EIO=4&transport=polling&t=NuT5YqS&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:18:49,537 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:18:49] "POST /socket.io/?EIO=4&transport=polling&t=NuT5g6b&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:19:14,562 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:19:14] "GET /socket.io/?EIO=4&transport=polling&t=NuT5g6b.0&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:19:17,617 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:19:17] "POST /socket.io/?EIO=4&transport=polling&t=NuT5mFi&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:19:42,642 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:19:42] "GET /socket.io/?EIO=4&transport=polling&t=NuT5mFj&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:19:42,770 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:19:42] "POST /socket.io/?EIO=4&transport=polling&t=NuT5t6X&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:20:07,795 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:20:07] "GET /socket.io/?EIO=4&transport=polling&t=NuT5t6Y&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:20:13,718 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:20:13] "POST /socket.io/?EIO=4&transport=polling&t=NuT5zFH&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:20:37,605 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:20:37] "POST /socket.io/?EIO=4&transport=polling&t=NuT64Uz&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-02 23:20:37,605 (INFO) _internal.py:_log => 127.0.0.1 - - [02/Jan/2022 23:20:37] "GET /socket.io/?EIO=4&transport=polling&t=NuT5zFI&sid=auGBVqPAI0qXLaViAAAA HTTP/1.1" 200 -
+2022-01-03 02:28:02,624 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 02:28:02,633 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-03 02:28:15,331 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-03 02:28:15,403 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:15] "GET / HTTP/1.1" 200 -
+2022-01-03 02:28:16,066 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:16] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:18,174 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:18] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:20,432 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:20] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:20,926 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:20] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:21,515 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:21] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:22,000 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:22] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:22,559 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:22] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:29,008 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-03 02:28:29,014 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:29] "GET / HTTP/1.1" 200 -
+2022-01-03 02:28:30,617 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:30] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:31,694 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:31] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:33,765 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:33] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:34,359 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:34] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:34,929 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:34] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:35,708 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:35] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:36,646 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:36] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:38,867 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-03 02:28:38,871 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:38] "GET / HTTP/1.1" 200 -
+2022-01-03 02:28:43,715 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:43] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:44,961 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:44] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:44,964 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:44] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:45,671 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:45] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:46,273 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:46] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:46,869 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:46] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:48,571 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:48] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:51,686 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-03 02:28:51,690 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:51] "GET / HTTP/1.1" 200 -
+2022-01-03 02:28:56,750 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:56] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:57,919 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:57] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:58,195 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:58] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:59,019 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:59] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:28:59,908 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:28:59] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:29:00,414 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:29:00] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:29:02,284 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:29:02] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:31:39,831 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 02:31:39,840 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-03 02:31:47,403 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 02:31:47,410 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-03 02:31:57,143 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-03 02:31:57,224 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:31:57] "GET / HTTP/1.1" 200 -
+2022-01-03 02:31:57,440 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:31:57] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:31:59,571 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:31:59] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:32:01,835 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:32:01] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:32:02,257 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:32:02] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:32:02,987 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:32:02] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:32:03,942 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:32:03] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 02:32:04,417 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 02:32:04] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 14:42:12,430 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 14:42:12,434 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-03 14:42:23,945 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-03 14:42:23,989 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:23] "GET / HTTP/1.1" 200 -
+2022-01-03 14:42:24,184 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:24] "GET /static/assets/images/squaremodule.webp HTTP/1.1" 200 -
+2022-01-03 14:42:27,731 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:27] "GET /static/assets/images/gappedmodule.webp HTTP/1.1" 200 -
+2022-01-03 14:42:28,225 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:28] "GET /static/assets/images/circlemodule.webp HTTP/1.1" 200 -
+2022-01-03 14:42:28,649 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:28] "GET /static/assets/images/verticalbarmodule.webp HTTP/1.1" 200 -
+2022-01-03 14:42:29,055 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:29] "GET /static/assets/images/roundedmodule.webp HTTP/1.1" 200 -
+2022-01-03 14:42:29,611 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:29] "GET /static/assets/images/horizontalbarmodule.webp HTTP/1.1" 200 -
+2022-01-03 14:42:29,906 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:29] "GET /static/assets/qr.webp HTTP/1.1" 200 -
+2022-01-03 14:42:32,366 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-01-03 14:42:40,868 (ERROR) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:40] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x037iÈ¡')
+2022-01-03 14:42:40,869 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:40] "[35m[1m  ü7iÈ¡[0m" HTTPStatus.BAD_REQUEST -
+2022-01-03 14:42:41,674 (ERROR) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:41] code 400, message Bad request version ('5=')
+2022-01-03 14:42:41,675 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:41] "[35m[1m  ü{´m 2(=æWÏÕ²ýÀ]ð°Èò	5=[0m" HTTPStatus.BAD_REQUEST -
+2022-01-03 14:42:43,549 (ERROR) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:43] code 400, message Bad request version ('È¥;)/Ì¸')
+2022-01-03 14:42:43,550 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:43] "[35m[1m  ü½q²D?¥Rlp¦v¾}¾v2îÈ¥;)/Ì¸[0m" HTTPStatus.BAD_REQUEST -
+2022-01-03 14:42:44,349 (ERROR) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:44] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÊÊ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+2022-01-03 14:42:44,350 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 14:42:44] "[35m[1m  üñ Ht`«!O·|åå68[×vW0¤"qò a#²¹ÿÄ«>LCÊmÇÔ?Gú5u.Ùv»Æ}-;  jjÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 ÊÊ     ÿ   [0m" HTTPStatus.BAD_REQUEST -
+2022-01-03 14:44:01,192 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 14:44:40,744 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 14:44:40,884 (INFO) _internal.py:_log =>  * Running on https://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-03 14:46:35,592 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+127.0.0.1 - - [03/Jan/2022:14:46:35 +0000] "GET / HTTP/1.1" 200 4375 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [03/Jan/2022:14:46:35 +0000] "GET /static/assets/images/squaremodule.webp HTTP/1.1" 304 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [03/Jan/2022:14:46:35 +0000] "GET /static/assets/images/gappedmodule.webp HTTP/1.1" 304 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [03/Jan/2022:14:46:35 +0000] "GET /static/assets/images/circlemodule.webp HTTP/1.1" 304 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [03/Jan/2022:14:46:35 +0000] "GET /static/assets/images/roundedmodule.webp HTTP/1.1" 304 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [03/Jan/2022:14:46:35 +0000] "GET /static/assets/images/verticalbarmodule.webp HTTP/1.1" 304 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [03/Jan/2022:14:46:35 +0000] "GET /static/assets/images/horizontalbarmodule.webp HTTP/1.1" 304 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [03/Jan/2022:14:46:35 +0000] "GET /static/assets/qr.webp HTTP/1.1" 304 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+2022-01-03 15:06:43,676 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 15:13:25,460 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 15:25:49,547 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 15:25:49,552 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-03 15:25:57,938 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-03 15:25:57,983 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:25:57] "GET / HTTP/1.1" 200 -
+2022-01-03 15:25:58,145 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:25:58] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 15:26:01,154 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:26:01] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 15:26:01,644 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:26:01] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 15:26:02,145 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:26:02] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 15:26:02,594 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:26:02] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 15:26:02,858 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:26:02] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-03 15:26:03,313 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:26:03] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-03 15:26:19,990 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:26:19] "[33mGET /qr-client/room2 HTTP/1.1[0m" 404 -
+2022-01-03 15:26:37,007 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:26:37] "[33mGET /qr-code/qr-client/room/2 HTTP/1.1[0m" 404 -
+2022-01-03 15:27:02,278 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:02] "GET /qr-client/room/2 HTTP/1.1" 200 -
+2022-01-03 15:27:06,649 (ERROR) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+2022-01-03 15:27:06,650 (INFO) socket.py:send => TWYjyqvb0s64uJpaAAAA: Sending packet OPEN data {'sid': 'TWYjyqvb0s64uJpaAAAA', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:27:06,652 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:06] "GET /socket.io/?EIO=4&transport=polling&t=NuWZDu- HTTP/1.1" 200 -
+2022-01-03 15:27:09,751 (INFO) socket.py:receive => TWYjyqvb0s64uJpaAAAA: Received packet MESSAGE data 0
+2022-01-03 15:27:09,752 (INFO) socket.py:send => TWYjyqvb0s64uJpaAAAA: Sending packet MESSAGE data 0{"sid":"6eerXErlY-psikC8AAAB"}
+2022-01-03 15:27:09,753 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:09] "POST /socket.io/?EIO=4&transport=polling&t=NuWZEsB&sid=TWYjyqvb0s64uJpaAAAA HTTP/1.1" 200 -
+2022-01-03 15:27:10,830 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:10] "GET /socket.io/?EIO=4&transport=polling&t=NuWZEsC&sid=TWYjyqvb0s64uJpaAAAA HTTP/1.1" 200 -
+2022-01-03 15:27:13,964 (INFO) socket.py:receive => TWYjyqvb0s64uJpaAAAA: Received packet MESSAGE data 2["join",{"id":"2"}]
+2022-01-03 15:27:13,965 (INFO) server.py:_handle_event => received event "join" from 6eerXErlY-psikC8AAAB [/]
+2022-01-03 15:27:13,968 (INFO) app.py:on_join => Joining room 2
+2022-01-03 15:27:13,968 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:13] "POST /socket.io/?EIO=4&transport=polling&t=NuWZFtl&sid=TWYjyqvb0s64uJpaAAAA HTTP/1.1" 200 -
+2022-01-03 15:27:13,969 (INFO) server.py:enter_room => 6eerXErlY-psikC8AAAB is entering room 2 [/]
+2022-01-03 15:27:28,574 (INFO) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details.
+2022-01-03 15:27:28,575 (INFO) socket.py:send => Y-2Gh_yHg1WqO4EUAAAC: Sending packet OPEN data {'sid': 'Y-2Gh_yHg1WqO4EUAAAC', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:27:28,577 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:28] "GET /socket.io/?EIO=4&transport=polling&t=NuWZJdE HTTP/1.1" 200 -
+2022-01-03 15:27:31,164 (INFO) socket.py:receive => Y-2Gh_yHg1WqO4EUAAAC: Received packet MESSAGE data 0
+2022-01-03 15:27:31,165 (INFO) socket.py:send => Y-2Gh_yHg1WqO4EUAAAC: Sending packet MESSAGE data 0{"sid":"VFT2zkwNIdfxb8_LAAAD"}
+2022-01-03 15:27:31,167 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:31] "POST /socket.io/?EIO=4&transport=polling&t=NuWZKCl&sid=Y-2Gh_yHg1WqO4EUAAAC HTTP/1.1" 200 -
+2022-01-03 15:27:31,437 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:31] "GET /socket.io/?EIO=4&transport=polling&t=NuWZKCm&sid=Y-2Gh_yHg1WqO4EUAAAC HTTP/1.1" 200 -
+2022-01-03 15:27:31,677 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:31] "GET /socket.io/?EIO=4&transport=polling&t=NuWZFtn&sid=TWYjyqvb0s64uJpaAAAA HTTP/1.1" 200 -
+2022-01-03 15:27:31,677 (INFO) socket.py:send => TWYjyqvb0s64uJpaAAAA: Sending packet PING data None
+2022-01-03 15:27:34,470 (INFO) socket.py:receive => Y-2Gh_yHg1WqO4EUAAAC: Received packet MESSAGE data 2["join",{"id":"2"}]
+2022-01-03 15:27:34,471 (INFO) server.py:_handle_event => received event "join" from VFT2zkwNIdfxb8_LAAAD [/]
+2022-01-03 15:27:34,473 (INFO) app.py:on_join => Joining room 2
+2022-01-03 15:27:34,474 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:34] "POST /socket.io/?EIO=4&transport=polling&t=NuWZKvK&sid=Y-2Gh_yHg1WqO4EUAAAC HTTP/1.1" 200 -
+2022-01-03 15:27:34,474 (INFO) server.py:enter_room => VFT2zkwNIdfxb8_LAAAD is entering room 2 [/]
+2022-01-03 15:27:35,410 (INFO) socket.py:receive => TWYjyqvb0s64uJpaAAAA: Received packet PONG data 
+2022-01-03 15:27:35,413 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:35] "POST /socket.io/?EIO=4&transport=polling&t=NuWZL3H&sid=TWYjyqvb0s64uJpaAAAA HTTP/1.1" 200 -
+2022-01-03 15:27:37,415 (INFO) socket.py:receive => Y-2Gh_yHg1WqO4EUAAAC: Received packet CLOSE data 
+2022-01-03 15:27:37,417 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:37] "POST /socket.io/?EIO=4&transport=polling&t=NuWZLgN&sid=Y-2Gh_yHg1WqO4EUAAAC HTTP/1.1" 200 -
+2022-01-03 15:27:37,417 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:37] "GET /socket.io/?EIO=4&transport=polling&t=NuWZKvL&sid=Y-2Gh_yHg1WqO4EUAAAC HTTP/1.1" 200 -
+2022-01-03 15:27:37,747 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:37] "[32mGET /qr-code/admin HTTP/1.1[0m" 302 -
+2022-01-03 15:27:40,258 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:40] "GET /qr-code/login HTTP/1.1" 200 -
+2022-01-03 15:27:53,222 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:53] "POST /qr-code/login HTTP/1.1" 200 -
+2022-01-03 15:27:55,748 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:55] "GET /qr-code/admin HTTP/1.1" 200 -
+2022-01-03 15:27:58,299 (INFO) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details.
+2022-01-03 15:27:58,300 (INFO) socket.py:send => VNRKT5dgXV5yg4jmAAAE: Sending packet OPEN data {'sid': 'VNRKT5dgXV5yg4jmAAAE', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:27:58,302 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:27:58] "GET /socket.io/?EIO=4&transport=polling&t=NuWZQsj HTTP/1.1" 200 -
+2022-01-03 15:28:00,438 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:28:00] "GET /socket.io/?EIO=4&transport=polling&t=NuWZL3I&sid=TWYjyqvb0s64uJpaAAAA HTTP/1.1" 200 -
+2022-01-03 15:28:00,438 (INFO) socket.py:send => TWYjyqvb0s64uJpaAAAA: Sending packet PING data None
+2022-01-03 15:28:01,320 (INFO) socket.py:receive => VNRKT5dgXV5yg4jmAAAE: Received packet MESSAGE data 0
+2022-01-03 15:28:01,321 (INFO) socket.py:send => VNRKT5dgXV5yg4jmAAAE: Sending packet MESSAGE data 0{"sid":"7sJuP7n1E4gB5gVoAAAF"}
+2022-01-03 15:28:01,322 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:28:01] "POST /socket.io/?EIO=4&transport=polling&t=NuWZRTF&sid=VNRKT5dgXV5yg4jmAAAE HTTP/1.1" 200 -
+2022-01-03 15:28:01,407 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:28:01] "GET /socket.io/?EIO=4&transport=polling&t=NuWZRTG&sid=VNRKT5dgXV5yg4jmAAAE HTTP/1.1" 200 -
+2022-01-03 15:28:05,022 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:28:05] "GET /qr-code/admin/room HTTP/1.1" 200 -
+2022-01-03 15:28:05,093 (INFO) socket.py:receive => TWYjyqvb0s64uJpaAAAA: Received packet PONG data 
+2022-01-03 15:28:05,095 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:28:05] "POST /socket.io/?EIO=4&transport=polling&t=NuWZR-X&sid=TWYjyqvb0s64uJpaAAAA HTTP/1.1" 200 -
+2022-01-03 15:28:07,399 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:28:07] "POST /qr-code/admin/room/2/number/32 HTTP/1.1" 200 -
+2022-01-03 15:28:09,774 (INFO) socket.py:receive => VNRKT5dgXV5yg4jmAAAE: Received packet MESSAGE data 2["notify","M32",2]
+2022-01-03 15:28:09,775 (INFO) server.py:_handle_event => received event "notify" from 7sJuP7n1E4gB5gVoAAAF [/]
+2022-01-03 15:28:09,777 (INFO) app.py:notify => Sendinf number M32 to room 2
+2022-01-03 15:28:09,778 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:28:09] "POST /socket.io/?EIO=4&transport=polling&t=NuWZTgB&sid=VNRKT5dgXV5yg4jmAAAE HTTP/1.1" 200 -
+2022-01-03 15:28:09,778 (INFO) server.py:emit => emitting event "notify" to 2 [/]
+2022-01-03 15:28:09,780 (INFO) socket.py:send => TWYjyqvb0s64uJpaAAAA: Sending packet MESSAGE data 2["notify","M32"]
+2022-01-03 15:28:09,781 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:28:09] "GET /socket.io/?EIO=4&transport=polling&t=NuWZR-Z&sid=TWYjyqvb0s64uJpaAAAA HTTP/1.1" 200 -
+2022-01-03 15:28:55,812 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 15:28:55,818 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-03 15:29:03,475 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:03] "GET /qr-code/admin HTTP/1.1" 200 -
+2022-01-03 15:29:09,863 (ERROR) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+2022-01-03 15:29:09,867 (INFO) socket.py:send => HyqtniIILED0K4K0AAAA: Sending packet OPEN data {'sid': 'HyqtniIILED0K4K0AAAA', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:29:09,872 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:09] "GET /socket.io/?EIO=4&transport=polling&t=NuWZhAm HTTP/1.1" 200 -
+2022-01-03 15:29:10,143 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:10] "GET /qr-client/room/2 HTTP/1.1" 200 -
+2022-01-03 15:29:10,190 (INFO) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details.
+2022-01-03 15:29:10,192 (INFO) socket.py:send => fCIYd6S0J0uc9wnUAAAB: Sending packet OPEN data {'sid': 'fCIYd6S0J0uc9wnUAAAB', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:29:10,196 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:10] "GET /socket.io/?EIO=4&transport=polling&t=NuWZhoC HTTP/1.1" 200 -
+2022-01-03 15:29:10,360 (INFO) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details.
+2022-01-03 15:29:10,362 (INFO) socket.py:send => K7Hln-sm0dP6MJLYAAAC: Sending packet OPEN data {'sid': 'K7Hln-sm0dP6MJLYAAAC', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:29:10,365 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:10] "GET /socket.io/?EIO=4&transport=polling&t=NuWZhOM HTTP/1.1" 200 -
+2022-01-03 15:29:13,292 (INFO) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details.
+2022-01-03 15:29:13,293 (INFO) socket.py:send => 8cUhUW6i7w-HU2D5AAAD: Sending packet OPEN data {'sid': '8cUhUW6i7w-HU2D5AAAD', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:29:13,295 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:13] "GET /socket.io/?EIO=4&transport=polling&t=NuWZj1P HTTP/1.1" 200 -
+2022-01-03 15:29:14,166 (INFO) socket.py:receive => K7Hln-sm0dP6MJLYAAAC: Received packet MESSAGE data 0
+2022-01-03 15:29:14,168 (INFO) socket.py:send => K7Hln-sm0dP6MJLYAAAC: Sending packet MESSAGE data 0{"sid":"x0ZMCKSBeBjMZtpqAAAE"}
+2022-01-03 15:29:14,171 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:14] "GET /socket.io/?EIO=4&transport=polling&t=NuWZj7f&sid=K7Hln-sm0dP6MJLYAAAC HTTP/1.1" 200 -
+2022-01-03 15:29:14,172 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:14] "POST /socket.io/?EIO=4&transport=polling&t=NuWZj7e&sid=K7Hln-sm0dP6MJLYAAAC HTTP/1.1" 200 -
+2022-01-03 15:29:16,435 (INFO) socket.py:receive => 8cUhUW6i7w-HU2D5AAAD: Received packet MESSAGE data 0
+2022-01-03 15:29:16,437 (INFO) socket.py:send => 8cUhUW6i7w-HU2D5AAAD: Sending packet MESSAGE data 0{"sid":"09Xni19u5oaRWysnAAAF"}
+2022-01-03 15:29:16,438 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:16] "POST /socket.io/?EIO=4&transport=polling&t=NuWZjn4&sid=8cUhUW6i7w-HU2D5AAAD HTTP/1.1" 200 -
+2022-01-03 15:29:16,809 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:16] "GET /socket.io/?EIO=4&transport=polling&t=NuWZjn7&sid=8cUhUW6i7w-HU2D5AAAD HTTP/1.1" 200 -
+2022-01-03 15:29:19,679 (INFO) socket.py:receive => 8cUhUW6i7w-HU2D5AAAD: Received packet MESSAGE data 2["join",{"id":"2"}]
+2022-01-03 15:29:19,680 (INFO) server.py:_handle_event => received event "join" from 09Xni19u5oaRWysnAAAF [/]
+2022-01-03 15:29:19,682 (INFO) app.py:on_join => Joining room 2
+2022-01-03 15:29:19,683 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:19] "POST /socket.io/?EIO=4&transport=polling&t=NuWZkds&sid=8cUhUW6i7w-HU2D5AAAD HTTP/1.1" 200 -
+2022-01-03 15:29:19,684 (INFO) server.py:enter_room => 09Xni19u5oaRWysnAAAF is entering room 2 [/]
+2022-01-03 15:29:34,897 (INFO) socket.py:send => HyqtniIILED0K4K0AAAA: Sending packet PING data None
+2022-01-03 15:29:35,220 (INFO) socket.py:send => fCIYd6S0J0uc9wnUAAAB: Sending packet PING data None
+2022-01-03 15:29:35,377 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:35] "GET /socket.io/?EIO=4&transport=polling&t=NuWZj_C&sid=K7Hln-sm0dP6MJLYAAAC HTTP/1.1" 200 -
+2022-01-03 15:29:35,377 (INFO) socket.py:send => K7Hln-sm0dP6MJLYAAAC: Sending packet PING data None
+2022-01-03 15:29:38,218 (INFO) socket.py:receive => K7Hln-sm0dP6MJLYAAAC: Received packet PONG data 
+2022-01-03 15:29:38,220 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:38] "POST /socket.io/?EIO=4&transport=polling&t=NuWZpA1&sid=K7Hln-sm0dP6MJLYAAAC HTTP/1.1" 200 -
+2022-01-03 15:29:38,295 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:38] "GET /socket.io/?EIO=4&transport=polling&t=NuWZkdt&sid=8cUhUW6i7w-HU2D5AAAD HTTP/1.1" 200 -
+2022-01-03 15:29:38,295 (INFO) socket.py:send => 8cUhUW6i7w-HU2D5AAAD: Sending packet PING data None
+2022-01-03 15:29:40,823 (INFO) socket.py:receive => 8cUhUW6i7w-HU2D5AAAD: Received packet PONG data 
+2022-01-03 15:29:40,825 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:29:40] "POST /socket.io/?EIO=4&transport=polling&t=NuWZptp&sid=8cUhUW6i7w-HU2D5AAAD HTTP/1.1" 200 -
+2022-01-03 15:30:03,245 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:30:03] "GET /socket.io/?EIO=4&transport=polling&t=NuWZpA2&sid=K7Hln-sm0dP6MJLYAAAC HTTP/1.1" 200 -
+2022-01-03 15:30:03,245 (INFO) socket.py:send => K7Hln-sm0dP6MJLYAAAC: Sending packet PING data None
+2022-01-03 15:30:05,848 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:30:05] "GET /socket.io/?EIO=4&transport=polling&t=NuWZptq&sid=8cUhUW6i7w-HU2D5AAAD HTTP/1.1" 200 -
+2022-01-03 15:30:05,847 (INFO) socket.py:send => 8cUhUW6i7w-HU2D5AAAD: Sending packet PING data None
+2022-01-03 15:30:05,994 (INFO) socket.py:receive => K7Hln-sm0dP6MJLYAAAC: Received packet PONG data 
+2022-01-03 15:30:05,996 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:30:05] "POST /socket.io/?EIO=4&transport=polling&t=NuWZv-5&sid=K7Hln-sm0dP6MJLYAAAC HTTP/1.1" 200 -
+2022-01-03 15:30:09,090 (INFO) socket.py:receive => 8cUhUW6i7w-HU2D5AAAD: Received packet PONG data 
+2022-01-03 15:30:09,092 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:30:09] "POST /socket.io/?EIO=4&transport=polling&t=NuWZwcm&sid=8cUhUW6i7w-HU2D5AAAD HTTP/1.1" 200 -
+2022-01-03 15:30:09,922 (INFO) socket.py:check_ping_timeout => HyqtniIILED0K4K0AAAA: Client is gone, closing socket
+2022-01-03 15:30:09,924 (INFO) socket.py:check_ping_timeout => HyqtniIILED0K4K0AAAA: Client is gone, closing socket
+2022-01-03 15:30:14,927 (INFO) socket.py:check_ping_timeout => fCIYd6S0J0uc9wnUAAAB: Client is gone, closing socket
+2022-01-03 15:30:14,927 (INFO) socket.py:check_ping_timeout => fCIYd6S0J0uc9wnUAAAB: Client is gone, closing socket
+2022-01-03 15:30:44,355 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 15:30:44,359 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-03 15:30:56,932 (ERROR) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+2022-01-03 15:30:56,933 (INFO) socket.py:send => 8cIG39wSefBKRxgLAAAA: Sending packet OPEN data {'sid': '8cIG39wSefBKRxgLAAAA', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:30:56,935 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:30:56] "GET /socket.io/?EIO=4&transport=polling&t=NuWa5vy HTTP/1.1" 200 -
+2022-01-03 15:30:57,007 (INFO) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details.
+2022-01-03 15:30:57,008 (INFO) socket.py:send => hZ_IN8EW0R8kXop0AAAB: Sending packet OPEN data {'sid': 'hZ_IN8EW0R8kXop0AAAB', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:30:57,010 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:30:57] "GET /socket.io/?EIO=4&transport=polling&t=NuWa609 HTTP/1.1" 200 -
+2022-01-03 15:30:57,185 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:30:57] "GET /qr-client/room/2 HTTP/1.1" 200 -
+2022-01-03 15:31:01,444 (INFO) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details.
+2022-01-03 15:31:01,445 (INFO) socket.py:send => aCwPSTG5buNLD8njAAAC: Sending packet OPEN data {'sid': 'aCwPSTG5buNLD8njAAAC', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:31:01,447 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:01] "GET /socket.io/?EIO=4&transport=polling&t=NuWa7HP HTTP/1.1" 200 -
+2022-01-03 15:31:01,540 (INFO) socket.py:receive => 8cIG39wSefBKRxgLAAAA: Received packet MESSAGE data 0
+2022-01-03 15:31:01,541 (INFO) socket.py:send => 8cIG39wSefBKRxgLAAAA: Sending packet MESSAGE data 0{"sid":"GEKX4w3ICL4lKPHaAAAD"}
+2022-01-03 15:31:01,542 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:01] "POST /socket.io/?EIO=4&transport=polling&t=NuWa74m&sid=8cIG39wSefBKRxgLAAAA HTTP/1.1" 200 -
+2022-01-03 15:31:01,683 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:01] "GET /socket.io/?EIO=4&transport=polling&t=NuWa74o&sid=8cIG39wSefBKRxgLAAAA HTTP/1.1" 200 -
+2022-01-03 15:31:04,916 (INFO) socket.py:receive => aCwPSTG5buNLD8njAAAC: Received packet MESSAGE data 0
+2022-01-03 15:31:04,918 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:04] "GET /socket.io/?EIO=4&transport=polling&t=NuWa8CW&sid=aCwPSTG5buNLD8njAAAC HTTP/1.1" 200 -
+2022-01-03 15:31:04,917 (INFO) socket.py:send => aCwPSTG5buNLD8njAAAC: Sending packet MESSAGE data 0{"sid":"PhAseeEycXQ6hJ5bAAAE"}
+2022-01-03 15:31:04,919 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:04] "POST /socket.io/?EIO=4&transport=polling&t=NuWa8CT&sid=aCwPSTG5buNLD8njAAAC HTTP/1.1" 200 -
+2022-01-03 15:31:07,888 (INFO) socket.py:receive => aCwPSTG5buNLD8njAAAC: Received packet MESSAGE data 2["join",{"id":"2"}]
+2022-01-03 15:31:07,889 (INFO) server.py:_handle_event => received event "join" from PhAseeEycXQ6hJ5bAAAE [/]
+2022-01-03 15:31:07,893 (INFO) app.py:on_join => Joining room 2
+2022-01-03 15:31:07,893 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:07] "POST /socket.io/?EIO=4&transport=polling&t=NuWa91Q&sid=aCwPSTG5buNLD8njAAAC HTTP/1.1" 200 -
+2022-01-03 15:31:07,894 (INFO) server.py:enter_room => PhAseeEycXQ6hJ5bAAAE is entering room 2 [/]
+2022-01-03 15:31:12,155 (INFO) socket.py:receive => 8cIG39wSefBKRxgLAAAA: Received packet CLOSE data 
+2022-01-03 15:31:12,156 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:12] "POST /socket.io/?EIO=4&transport=polling&t=NuWaA9a&sid=8cIG39wSefBKRxgLAAAA HTTP/1.1" 200 -
+2022-01-03 15:31:12,157 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:12] "GET /socket.io/?EIO=4&transport=polling&t=NuWa8Nr&sid=8cIG39wSefBKRxgLAAAA HTTP/1.1" 200 -
+2022-01-03 15:31:12,570 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:12] "GET /qr-code/admin HTTP/1.1" 200 -
+2022-01-03 15:31:15,136 (INFO) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details.
+2022-01-03 15:31:15,138 (INFO) socket.py:send => IOBQ7BQZnn63bM-4AAAF: Sending packet OPEN data {'sid': 'IOBQ7BQZnn63bM-4AAAF', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-03 15:31:15,139 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:15] "GET /socket.io/?EIO=4&transport=polling&t=NuWaAvg HTTP/1.1" 200 -
+2022-01-03 15:31:17,850 (INFO) socket.py:receive => IOBQ7BQZnn63bM-4AAAF: Received packet MESSAGE data 0
+2022-01-03 15:31:17,852 (INFO) socket.py:send => IOBQ7BQZnn63bM-4AAAF: Sending packet MESSAGE data 0{"sid":"ImUcjoYvRAjz3p0IAAAG"}
+2022-01-03 15:31:17,853 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:17] "POST /socket.io/?EIO=4&transport=polling&t=NuWaBWq&sid=IOBQ7BQZnn63bM-4AAAF HTTP/1.1" 200 -
+2022-01-03 15:31:18,134 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:18] "GET /socket.io/?EIO=4&transport=polling&t=NuWaBWs&sid=IOBQ7BQZnn63bM-4AAAF HTTP/1.1" 200 -
+2022-01-03 15:31:20,028 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:20] "GET /qr-code/admin/room HTTP/1.1" 200 -
+2022-01-03 15:31:22,029 (INFO) socket.py:send => hZ_IN8EW0R8kXop0AAAB: Sending packet PING data None
+2022-01-03 15:31:23,235 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:23] "POST /qr-code/admin/room/2/number/33 HTTP/1.1" 200 -
+2022-01-03 15:31:25,647 (INFO) socket.py:receive => IOBQ7BQZnn63bM-4AAAF: Received packet MESSAGE data 2["notify","M33",2]
+2022-01-03 15:31:25,648 (INFO) server.py:_handle_event => received event "notify" from ImUcjoYvRAjz3p0IAAAG [/]
+2022-01-03 15:31:25,650 (INFO) app.py:notify => Sendinf number M33 to room 2
+2022-01-03 15:31:25,650 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:25] "POST /socket.io/?EIO=4&transport=polling&t=NuWaDU7&sid=IOBQ7BQZnn63bM-4AAAF HTTP/1.1" 200 -
+2022-01-03 15:31:25,651 (INFO) server.py:emit => emitting event "notify" to 2 [/]
+2022-01-03 15:31:25,654 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:25] "GET /socket.io/?EIO=4&transport=polling&t=NuWa915&sid=aCwPSTG5buNLD8njAAAC HTTP/1.1" 200 -
+2022-01-03 15:31:25,653 (INFO) socket.py:send => aCwPSTG5buNLD8njAAAC: Sending packet MESSAGE data 2["notify","M33"]
+2022-01-03 15:31:26,472 (INFO) socket.py:send => aCwPSTG5buNLD8njAAAC: Sending packet PING data None
+2022-01-03 15:31:28,147 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:28] "GET /socket.io/?EIO=4&transport=polling&t=NuWaE5P&sid=aCwPSTG5buNLD8njAAAC HTTP/1.1" 200 -
+2022-01-03 15:31:31,396 (INFO) socket.py:receive => aCwPSTG5buNLD8njAAAC: Received packet PONG data 
+2022-01-03 15:31:31,398 (INFO) _internal.py:_log => 127.0.0.1 - - [03/Jan/2022 15:31:31] "POST /socket.io/?EIO=4&transport=polling&t=NuWaEi0&sid=aCwPSTG5buNLD8njAAAC HTTP/1.1" 200 -
+2022-01-03 15:31:45,048 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-03 15:31:45,052 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-04 00:09:40,784 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-04 00:09:40,795 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-04 00:09:53,241 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-04 00:09:53,319 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:09:53] "GET / HTTP/1.1" 200 -
+2022-01-04 00:09:53,652 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:09:53] "GET /static/assets/images/squaremodule.webp HTTP/1.1" 200 -
+2022-01-04 00:09:58,339 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:09:58] "GET /static/assets/images/gappedmodule.webp HTTP/1.1" 200 -
+2022-01-04 00:09:59,607 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:09:59] "GET /static/assets/images/circlemodule.webp HTTP/1.1" 200 -
+2022-01-04 00:10:00,776 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:00] "GET /static/assets/images/roundedmodule.webp HTTP/1.1" 200 -
+2022-01-04 00:10:03,650 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:03] "GET /static/assets/qr.webp HTTP/1.1" 200 -
+2022-01-04 00:10:04,597 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:04] "GET /static/assets/images/verticalbarmodule.webp HTTP/1.1" 200 -
+2022-01-04 00:10:05,180 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:05] "GET /static/assets/images/horizontalbarmodule.webp HTTP/1.1" 200 -
+2022-01-04 00:10:08,630 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-01-04 00:10:26,269 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:26] "GET /qr-client/room/2 HTTP/1.1" 200 -
+2022-01-04 00:10:26,703 (ERROR) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+2022-01-04 00:10:26,705 (INFO) socket.py:send => 4ecrzvWeAPqZ5N3AAAAA: Sending packet OPEN data {'sid': '4ecrzvWeAPqZ5N3AAAAA', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-04 00:10:26,718 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:26] "GET /socket.io/?EIO=4&transport=polling&t=NuYR0s6 HTTP/1.1" 200 -
+2022-01-04 00:10:30,598 (INFO) socket.py:receive => 4ecrzvWeAPqZ5N3AAAAA: Received packet MESSAGE data 0
+2022-01-04 00:10:30,600 (INFO) socket.py:send => 4ecrzvWeAPqZ5N3AAAAA: Sending packet MESSAGE data 0{"sid":"J6cC_yeVadkMvw0GAAAB"}
+2022-01-04 00:10:30,602 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:30] "POST /socket.io/?EIO=4&transport=polling&t=NuYR0v8&sid=4ecrzvWeAPqZ5N3AAAAA HTTP/1.1" 200 -
+2022-01-04 00:10:31,174 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:31] "GET /socket.io/?EIO=4&transport=polling&t=NuYR0vB&sid=4ecrzvWeAPqZ5N3AAAAA HTTP/1.1" 200 -
+2022-01-04 00:10:35,101 (INFO) socket.py:receive => 4ecrzvWeAPqZ5N3AAAAA: Received packet MESSAGE data 2["join",{"id":"2"}]
+2022-01-04 00:10:35,103 (INFO) server.py:_handle_event => received event "join" from J6cC_yeVadkMvw0GAAAB [/]
+2022-01-04 00:10:35,108 (INFO) app.py:on_join => Joining room 2
+2022-01-04 00:10:35,109 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:10:35] "POST /socket.io/?EIO=4&transport=polling&t=NuYR1-k&sid=4ecrzvWeAPqZ5N3AAAAA HTTP/1.1" 200 -
+2022-01-04 00:10:35,110 (INFO) server.py:enter_room => J6cC_yeVadkMvw0GAAAB is entering room 2 [/]
+2022-01-04 00:38:15,836 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-04 00:38:15,845 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-04 00:38:27,407 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-04 00:38:27,531 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:38:27] "GET / HTTP/1.1" 200 -
+2022-01-04 00:38:28,806 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:38:28] "GET /qr-client/room/2 HTTP/1.1" 200 -
+2022-01-04 00:38:30,956 (ERROR) server.py:_log_error_once => The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+2022-01-04 00:38:30,958 (INFO) socket.py:send => LOL88UbZ-Nk1FotAAAAA: Sending packet OPEN data {'sid': 'LOL88UbZ-Nk1FotAAAAA', 'upgrades': [], 'pingTimeout': 20000, 'pingInterval': 25000}
+2022-01-04 00:38:30,961 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:38:30] "GET /socket.io/?EIO=4&transport=polling&t=NuYXRgj HTTP/1.1" 200 -
+2022-01-04 00:38:35,015 (INFO) socket.py:receive => LOL88UbZ-Nk1FotAAAAA: Received packet MESSAGE data 0
+2022-01-04 00:38:35,018 (INFO) socket.py:send => LOL88UbZ-Nk1FotAAAAA: Sending packet MESSAGE data 0{"sid":"sJYc3WKQfAAf09DqAAAB"}
+2022-01-04 00:38:35,021 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:38:35] "POST /socket.io/?EIO=4&transport=polling&t=NuYXS53&sid=LOL88UbZ-Nk1FotAAAAA HTTP/1.1" 200 -
+2022-01-04 00:38:35,457 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 00:38:35] "GET /socket.io/?EIO=4&transport=polling&t=NuYXS56&sid=LOL88UbZ-Nk1FotAAAAA HTTP/1.1" 200 -
+2022-01-04 01:12:03,992 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-04 01:12:03,999 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-04 01:12:16,595 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-04 01:12:16,692 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:12:16] "GET / HTTP/1.1" 200 -
+2022-01-04 01:12:17,031 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:12:17] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:12:20,988 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:12:20] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:12:21,745 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:12:21] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:12:22,485 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:12:22] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:12:25,392 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:12:25] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:12:26,093 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:12:26] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:12:26,707 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:12:26] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:13:06,758 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:13:06] "[33mPOST /qr-code HTTP/1.1[0m" 404 -
+2022-01-04 01:14:05,331 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-04 01:14:05,337 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:05] "GET / HTTP/1.1" 200 -
+2022-01-04 01:14:05,543 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:05] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:10,154 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:10] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:10,823 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:10] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:11,398 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:11] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:12,147 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:12] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:12,580 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:12] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:13,020 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:13] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:17,586 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:17] "[33mPOST /qr-code HTTP/1.1[0m" 404 -
+2022-01-04 01:14:33,290 (WARNING) _internal.py:_log => WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-04 01:14:33,301 (INFO) _internal.py:_log =>  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2022-01-04 01:14:43,440 (INFO) app_qr.py:qr => IP: 127.0.0.1 GET / page
+2022-01-04 01:14:43,506 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:43] "GET / HTTP/1.1" 200 -
+2022-01-04 01:14:43,819 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:43] "[36mGET /static/assets/images/squaremodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:52,035 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:52] "[36mGET /static/assets/images/horizontalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:52,181 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:52] "[36mGET /static/assets/images/circlemodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:52,445 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:52] "[36mGET /static/assets/images/gappedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:52,503 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:52] "[36mGET /static/assets/images/roundedmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:52,698 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:52] "[36mGET /static/assets/qr.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:14:52,980 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:14:52] "[36mGET /static/assets/images/verticalbarmodule.webp HTTP/1.1[0m" 304 -
+2022-01-04 01:15:06,103 (INFO) app_qr.py:qr => IP: 127.0.0.1 POST / page
+2022-01-04 01:15:06,661 (INFO) _internal.py:_log => 127.0.0.1 - - [04/Jan/2022 01:15:06] "POST / HTTP/1.1" 200 -

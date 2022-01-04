@@ -14,8 +14,10 @@ app = Flask(__name__, static_folder='static')
 Compress(app)
 app.secret_key = '28917010'
 
+cors = CORS(app,resources={r"/*":{"origins":"*"}})
+
 ### Socket IO ###
-socketio = SocketIO(app)
+socketio = SocketIO(app, cors_allowed_origins='*', logger=True, engineio_logger=True)
 
 ### BLUE PRINTS ###
 app.register_blueprint(app_qr)
@@ -23,8 +25,6 @@ app.register_blueprint(app_login)
 #app.register_blueprint(app_excel)
 #app.register_blueprint(app_pdf)
 #app.register_blueprint(app_ocr)
-
-cors = CORS(app)
 
 logging.basicConfig(
                     level = logging.INFO,
@@ -69,6 +69,7 @@ def on_leave(data):
     room = data['id']
     logging.info(f'Leaving room {room}')
     leave_room(str(room))
+
 
 
 

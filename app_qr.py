@@ -103,15 +103,15 @@ def qr_client(id):
 
 
 
-@app_qr.route("/qr-code",
+@app_qr.route("/",
     methods=["GET","POST"])
 def qr():
     if request.method == "GET":
-        logging.info(f'IP: {request.remote_addr} GET /qr-code page')
+        logging.info(f'IP: {request.remote_addr} GET / page')
         return render_template('qr.html', title="QR Code Generator")
 
     else:
-        logging.info(f'IP: {request.remote_addr} POST /qr-code page')
+        logging.info(f'IP: {request.remote_addr} POST / page')
 
         txt = request.values["text"]
         module = request.values["module"]
