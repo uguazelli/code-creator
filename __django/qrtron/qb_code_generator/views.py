@@ -1,12 +1,10 @@
+import os, qrcode
 from io import BytesIO
-import uuid, os, qrcode
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
-from . util import TEMP_DIR, color_qr_code
 from qrcode.image.styledpil import StyledPilImage
 from qrcode.image.styles.moduledrawers import CircleModuleDrawer, GappedSquareModuleDrawer, HorizontalBarsDrawer, RoundedModuleDrawer, SquareModuleDrawer, VerticalBarsDrawer
-from PIL import Image
 from django.core.files.storage import FileSystemStorage
 
 # Create your views here.
@@ -18,42 +16,15 @@ def generate_qr_code(request):
         context = {"title": "QR TRON"}
         return render(request, 'qrcode.html', context)
     else:
-        # POST Values
+        # POST Logo
         if len(request.FILES) != 0:
             file = request.FILES["file"]
-            #logo = Image.open(file)
             fs = FileSystemStorage()
             filename = fs.save(file.name, file)
-            logo = fs.url(filename)
+            logo = "." + fs.url(filename)
         else:
             logo = None
-        txt = request.POST["text"]
-        QRcolor = request.POST["frontcolor"]
-        QRbackgroundcolor = request.POST["backgroudcolor"]
-
-        image_data = color_qr_code(txt, logo, QRcolor, QRbackgroundcolor)
-        return HttpResponse(image_data, content_type="image/png")
-
-
-
-
-
-
-
-@csrf_exempt
-def generate_qr_code2(request):
-
-    if request.method == "GET":
-        context = {"title": "QR TRON"}
-        return render(request, 'qrcode.html', context)
-    else:
-        # POST Values
-        if len(request.FILES) != 0:
-            file = request.FILES["file"]
-            logo = Image.open(file)
-        else:
-            logo = None
-
+        # POST values
         txt = request.POST["text"]
         module = request.POST["module"]
         QRcolor = request.POST["frontcolor"]
@@ -85,15 +56,12 @@ def generate_qr_code2(request):
         else:
             md = SquareModuleDrawer()
 
-        # COLORS ONLY WORK WITH squaremodule
+        #TODO Enable Color
         if (module != "squaremodule"):
             image_factory = StyledPilImage
         else:
-            image_factory = None
-
-
-        i =  os.path.join(os.path.dirname(os.path.dirname(__file__)),'qb_code_generator','i.png')
-        logo = Image.open(i)
+            #image_factory = None
+            image_factory = StyledPilImage
 
         # CREATE IMAGE
         QRimg = QRcode.make_image(
@@ -103,6 +71,9 @@ def generate_qr_code2(request):
             embeded_image_path=logo,
             module_drawer=md
             ).convert('RGB')
+
+        if logo is not None:
+            os.remove(logo)
 
         # CREATE IN MEMORY FILE
         temp = BytesIO()

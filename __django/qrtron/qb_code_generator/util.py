@@ -7,8 +7,8 @@ PROJECT_ROOT = os.path.dirname(__file__)
 TEMP_DIR = os.path.join(PROJECT_ROOT, "tmp")
 
 
-def unique_name_path(filename):
-    filename = os.path.join(PROJECT_ROOT, TEMP_DIR, filename)
+def unique_png_path():
+    filename = os.path.join(PROJECT_ROOT, TEMP_DIR, str(uuid.uuid1()) + ".png")
     return filename
 
 
