@@ -1,6 +1,6 @@
 class QR {
     constructor() {
-      this.qrData = "qr-tron.com";
+      this.qrData = "www.super-qr.com";
       this.image = null;
       this.frontColor = "#59CCE1";
       this.backColor = "#ffffff";
