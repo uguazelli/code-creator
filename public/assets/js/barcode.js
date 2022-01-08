@@ -108,6 +108,15 @@ function validateFormat(value, format){
     }
 }
 
+function downloadBarCode(){
+    console.log("test")
+
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = document.getElementById("barcode").currentSrc;
+    hiddenElement.download = 'barcode.jpg';
+    hiddenElement.click();
+}
+
 function createBarCode(){
     try {
         JsBarcode("#barcode", bcObject.data, {
