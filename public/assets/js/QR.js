@@ -1,8 +1,8 @@
 class QR {
     constructor() {
-      this.qrData = "www.super-qr.com";
-      this.image = null;
-      this.frontColor = "#59CCE1";
+      this.qrData = "www.facebook.com";
+      this.image = "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg";
+      this.frontColor = "#1977F3";
       this.backColor = "#ffffff";
       this.cornerColor = "#0e2e62";
       this.dotsOptionsType = "dots";
@@ -12,8 +12,12 @@ class QR {
       this.width = 300;
       this.height = 300;
       this.ext = "png";
+      this.hideBackgroundDots = true;
+      this.imageSize = 0.4;
+      this.logoMargin = 5;
     }
   }
+
 
 
 
@@ -34,17 +38,21 @@ class QR {
 
   var qr = new QR();
 
-  function selectQRExt(element, ext) {
-      qr.ext = ext;
-      for (let element of document.getElementsByClassName("qr-extention")) {
-          element.checked = false;
-      }
-      element.checked = true;
+  function hideBackground(element){
+    qr.hideBackgroundDots = element.checked;
+    createQR();
   }
 
-  function updateSize(element) {
-      this.width = element.value;
-      this.height = element.value;
+  function updateLogoSize(element){
+    document.getElementById("logoSizeValue").innerHTML = element.value * 10;
+    qr.imageSize = element.value;
+    createQR();
+  }
+
+  function updateLogoMargin(element){
+    document.getElementById("logoMarginValue").innerHTML = element.value;
+    qr.logoMargin = element.value;
+    createQR();
   }
 
   function encodeImageFileAsURL(element) {
@@ -98,6 +106,22 @@ class QR {
       createQR();
   }
 
+  function selectQRExt(element, ext) {
+    qr.ext = ext;
+    for (let element of document.getElementsByClassName("qr-extention")) {
+        element.checked = false;
+    }
+    element.checked = true;
+}
+
+function updateSize(element) {
+    document.getElementById("imageSizeValue").innerHTML = element.value;
+    this.width = element.value;
+    this.height = element.value;
+}
+
+  //when page loads execute right away
+  createQR();
   async function createQR(download = false) {
 
       if (qr.data == "") {
@@ -117,7 +141,9 @@ class QR {
           imageOptions: {
               crossOrigin: "anonymous",
               imageSize: 0.5,
-              margin: 20
+              margin: qr.logoMargin,
+              hideBackgroundDots: qr.hideBackgroundDots,
+              imageSize: qr.imageSize
           },
           dotsOptions: {
               color: qr.frontColor,
