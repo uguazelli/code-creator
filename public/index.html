@@ -1,512 +1,83 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free QR Code generator">
-    <meta name="author" content="Ugo Guazelli">
-    <title>SUPER QR</title>
-    <script type="module" src="/index.js"></script>
-    <!-- Bootstrap core CSS -->
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Code Creator</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6811805402881862"
         crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/cover.css" rel="stylesheet">
 </head>
 
-<body class="app-main-color">
-    <main class="container">
+<body class="d-flex h-100 text-center text-white ">
 
-        <nav class="navbar navbar-expand-lg navbar-dark app-main-color">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">
-                    <span class="material-icons">qr_code_2</span>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">code-creator.net</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/qrcode">QR Code</a>
+                    <a class="nav-link" href="/barcode">Barcode</a>
+                </nav>
+            </div>
+        </header>
 
-                </a>
-                <a class="navbar-brand" href="/">
-                    <strong>SUPER-QR</strong>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="/">QR Code</a>
-                        <a class="nav-link active" href="/barcode.html">Bar code</a>
-                        <a class="nav-link active" href="/">Pricing</a>
-                    </div>
+        <main class="px-3">
+            <h1>Free creator</h1>
+            <p class="lead">Create QR codes and Bar code for free.</p>
+            <div class="row">
+                <div class="col-sm">
+                    <p class="lead">
+                        <a href="/qrcode" class="btn btn-lg btn-secondary fw-bold border-white bg-white">QR CODE</a>
+                    </p>
                 </div>
-
-            </div>
-        </nav>
-        <br>
-
-
-        <nav>
-            <div class="nav nav-tabs navbar-dark app-main-color" id="nav-tab" role="tablist">
-                <button class="nav-link nav-tab-link active" id="url-tab" onClick="showQRTab(this.id)">URL</button>
-                <button class="nav-link nav-tab-link" id="text-tab" onClick="showQRTab(this.id)">TEXT</button>
-                <button class="nav-link nav-tab-link" id="email-tab" onClick="showQRTab(this.id)">EMAIL</button>
-                <button class="nav-link nav-tab-link" id="phone-tab" onClick="showQRTab(this.id)">PHONE</button>
-                <button class="nav-link nav-tab-link" id="sms-tab" onClick="showQRTab(this.id)">SMS</button>
-                <button class="nav-link nav-tab-link" id="wifi-tab" onClick="showQRTab(this.id)">WIFI</button>
-                <!--<button class="nav-link nav-tab-link" id="calendar-tab" onClick="showQRTab(this.id)">CALENDAR</button>-->
-            </div>
-        </nav>
-
-        <div>
-            <!--TABS-->
-            <div class="tab-pane fade show active">
-                <div class="row">
-                    <div class="col-sm-8 my-3 p-3 bg-body rounded shadow-sm">
-                        <h2 class="border-bottom pb-2 mb-0">QR Code Builder</h2>
-
-                        <!--URL TAB-->
-                        <div class="mb-3 row tab-change-content accordion-flush" id="url-tab-content"
-                            style="display: flex;">
-                            <label class="col-sm-2 col-form-label">
-                                <span class="material-icons md-48 blue700">http</span>
-                            </label>
-                            <div class="col-sm-10">
-                                <div class="accordion-item mt-2">
-                                    <h2 class="accordion-header" id="headingURL">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseURL">
-                                            URL
-                                        </button>
-                                    </h2>
-                                    <div id="collapseURL" class="accordion-collapse collapse show">
-                                        <div class="accordion-body">
-                                            <label class="form-label">Enter a URL below</label>
-                                            <input type="text" id="qrData" class="form-control" oninput="updateQR(this)"
-                                                placeholder="www.super-qr.com">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--TEXT TAB-->
-                        <div class="mb-3 row tab-change-content accordion-flush" id="text-tab-content"
-                            style="display: none;">
-                            <label class="col-sm-2 col-form-label">
-                                <span class="material-icons md-48 blue700">description</span>
-                            </label>
-                            <div class="col-sm-10">
-                                <div class="accordion-item mt-2">
-                                    <h2 class="accordion-header" id="headingText">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseText">
-                                            TEXT
-                                        </button>
-                                    </h2>
-                                    <div id="collapseText" class="accordion-collapse collapse show">
-                                        <div class="accordion-body">
-                                            <label class="form-label">Enter a TEXT below</label>
-                                            <textarea class="form-control" placeholder="Somenting amazing!!!"
-                                                oninput="updateQR(this)" id="qrData"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--EMAIL TAB-->
-                        <div class="mb-3 row tab-change-content accordion-flush" id="email-tab-content"
-                            style="display: none;">
-                            <label class="col-sm-2 col-form-label">
-                                <span class="material-icons md-48 blue700">email</span>
-                            </label>
-                            <div class="col-sm-10">
-                                <div class="accordion-item mt-2">
-                                    <h2 class="accordion-header" id="headingText">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseEmail">
-                                            EMAIL
-                                        </button>
-                                    </h2>
-                                    <div id="collapseEmail" class="accordion-collapse collapse show">
-                                        <div class="accordion-body">
-                                            <div class="mb-3">
-                                                <label class="form-label">Email address to:</label>
-                                                <input type="email" class="form-control" id="emailTO"
-                                                    oninput="updateEmail(this)" placeholder="name@example.com">
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label class="form-label">Subject:</label>
-                                                <input type="text" class="form-control" oninput="updateEmail(this)"
-                                                    id="emailSubject">
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label class="form-label">Message:</label>
-                                                <textarea class="form-control" id="emailMessage"
-                                                    oninput="updateEmail(this)" rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--PHONE TAB-->
-                        <div class="mb-3 row tab-change-content accordion-flush" id="phone-tab-content"
-                            style="display: none;">
-                            <label class="col-sm-2 col-form-label">
-                                <span class="material-icons md-48 blue700">call</span>
-                            </label>
-                            <div class="col-sm-10">
-                                <div class="accordion-item mt-2">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapsePhone">
-                                            Phone
-                                        </button>
-                                    </h2>
-                                    <div id="collapsePhone" class="accordion-collapse collapse show">
-                                        <div class="accordion-body">
-                                            <label class="form-label">Enter a phone number</label>
-                                            <input type="phone" id="qrData" class="form-control"
-                                                oninput="updateQR(this)" placeholder="+1 555 963 1234">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--SMS TAB-->
-                        <div class="mb-3 row tab-change-content accordion-flush" id="sms-tab-content"
-                            style="display: none;">
-                            <label class="col-sm-2 col-form-label">
-                                <span class="material-icons md-48 blue700">textsms</span>
-                            </label>
-                            <div class="col-sm-10">
-                                <div class="accordion-item mt-2">
-                                    <h2 class="accordion-header" id="headingURL">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseSMS">
-                                            SMS
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSMS" class="accordion-collapse collapse show">
-                                        <div class="accordion-body">
-                                            <div class="mb-3">
-                                                <label class="form-label">Phone number</label>
-                                                <input type="phone" id="SMSPhone" class="form-control"
-                                                    oninput="updateSMS(this)" placeholder="+1 555 963 1234">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label class="form-label">Message</label>
-                                                <input type="text" id="SMSMessage" class="form-control"
-                                                    oninput="updateSMS(this)">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--WIFI TAB-->
-                        <div class="mb-3 row tab-change-content accordion-flush" id="wifi-tab-content"
-                            style="display: none;">
-                            <label class="col-sm-2 col-form-label">
-                                <span class="material-icons md-48 blue700">call</span>
-                            </label>
-                            <div class="col-sm-10">
-                                <div class="accordion-item mt-2">
-                                    <h2 class="accordion-header" id="headingWIFI">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseWifi">
-                                            WIFI
-                                        </button>
-                                    </h2>
-                                    <div id="collapseWifi" class="accordion-collapse collapse show">
-                                        <div class="accordion-body">
-
-                                            <div class="mb-3">
-                                                <label class="form-label">Wireless SSID</label>
-                                                <input type="text" id="ssid" class="form-control"
-                                                    oninput="updateWIFI(this)">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label class="form-label">Password</label>
-                                                <input type="password" id="wifi-password" class="form-control"
-                                                    oninput="updateWIFI(this)">
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label class="form-label">Encryption</label>
-                                                <select id="wifi-encryption" class="form-select" aria-label="WPA"
-                                                    oninput="updateWIFI(this)">
-                                                    <option value="WPA">WPA</option>
-                                                    <option value="WPE">WEP</option>
-                                                    <option value="nyanpass">No Encryption</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr>
-                        <!--QR MAIN STYLE TAB-->
-                        <div class="mb-3 row accordion-flush">
-                            <label class="col-sm-2 col-form-label">
-                                <span class="material-icons md-48 blue700">qr_code_2</span>
-                            </label>
-                            <div class="col-sm-10">
-                                <div class="accordion-item mt-2">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseMainStyle">
-                                            QR style
-                                        </button>
-                                    </h2>
-                                    <div id="collapseMainStyle" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            <div class="row">
-
-                                                <!--Colors-->
-                                                <div class="row mb-3">
-                                                    <!--Colors-->
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <label for="color" class="form-label">Main Color</label>
-                                                            <input type="color" class="form-control form-control-color"
-                                                                oninput="updateQR(this)" id="frontColor" value="#1977F3"
-                                                                title="Choose your color">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <label for="backgroudcolor" class="form-label">Background
-                                                                Color</label>
-                                                            <input type="color" class="form-control form-control-color"
-                                                                oninput="updateQR(this)" id="backColor" value="#FFFFFF"
-                                                                title="Choose your color">
-                                                        </div>
-                                                    </div>
-
-                                                    <!--Colors-->
-                                                    <div class="row  mb-3">
-                                                        <div class="col-6">
-                                                            <label for="color" class="form-label">Corner Color</label>
-                                                            <input type="color" class="form-control form-control-color"
-                                                                oninput="updateQR(this)" id="cornerColor"
-                                                                value="#0e2e62" title="Choose your color">
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <label for="backgroudcolor" class="form-label">Corner Dot
-                                                                Color</label>
-                                                            <input type="color" class="form-control form-control-color"
-                                                                oninput="updateQR(this)" id="insideCornerColor"
-                                                                value="#a70606" title="Choose your color">
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <!--Main Style-->
-                                                <div class="row mb-3">
-                                                    <div class="col-lg-3">Main Style</div>
-                                                    <div class="col-lg-9">
-                                                        <select class="form-select"
-                                                            onchange="setQRStyle('dotsOptionsType', this.value)"
-                                                            aria-label="Default select example">
-                                                            <option value="dots" selected>Dots</option>
-                                                            <option value="square">Square</option>
-                                                            <option value="rounded">Roundend</option>
-                                                            <option value="extra-rounded">Extra Roundend</option>
-                                                            <option value="classy">Classy</option>
-                                                            <option value="classy-rounded">Classy Roundend</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <!--Corner Style-->
-                                                <div class="row mb-3">
-                                                    <div class="col-lg-3">Corner Style</div>
-                                                    <div class="col-lg-9">
-                                                        <select class="form-select"
-                                                            onchange="setQRStyle('cornersSquareType', this.value)"
-                                                            aria-label="Default select example">
-                                                            <option value="square" selected>Square</option>
-                                                            <option value="dots">Dots</option>
-                                                            <option value="extra-rounded">Extra Roundend</option>
-
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <!--Dot Style-->
-                                                <div class="row mb-3">
-                                                    <div class="col-lg-3">Corner Dot</div>
-                                                    <div class="col-lg-9">
-                                                        <select class="form-select"
-                                                            onchange="setQRStyle('insideCornerStyle', this.value)"
-                                                            aria-label="Default select example">
-                                                            <option value="square" selected>Square</option>
-                                                            <option value="dots">Dots</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <!--Logo-->
-                                                <div class="row mb-3">
-
-                                                    <div class="col-lg-3">Logo</div>
-                                                    <div class="col-lg-9">
-                                                        <input class="form-control" type="file" id="fileupload"
-                                                            onchange="encodeImageFileAsURL(this)">
-                                                    </div>
-                                                </div>
-
-                                                <!--Hide backgorund Logo-->
-                                                <div class="row mb-3">
-
-                                                    <div class="col-12 form-check">
-                                                        <label class="form-check-label">
-                                                            Hide Logo Background Dots
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" checked
-                                                            onclick="hideBackground(this)">
-                                                    </div>
-                                                </div>
-
-                                                <!--Logo Size-->
-                                                <div class="row mb-3">
-                                                    <div class="row mb-3">
-                                                        <div class="col-sm-4"><span class="fw-bolder">Logo size</span>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <input type="range" class="form-range" min="0" max="0.9"
-                                                                step="0.1" value="0.4" oninput="updateLogoSize(this)">
-                                                        </div>
-                                                        <div class="col-sm-2"><span id="logoSizeValue">4</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--Logo Margin-->
-                                                <div class="row mb-3">
-                                                    <div class="row mb-3">
-                                                        <div class="col-sm-4"><span class="fw-bolder">Logo margin</span>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <input type="range" class="form-range" min="0" max="50"
-                                                                value="5" oninput="updateLogoMargin(this)">
-                                                        </div>
-                                                        <div class="col-sm-2"><span id="logoMarginValue">4</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--Size Download-->
-                                                <div class="row mb-3">
-                                                    <div class="row mb-3">
-                                                        <div class="col-sm-4"><span class="fw-bolder">Download Image
-                                                                size</span>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <input type="range" class="form-range" min="100" max="1000"
-                                                                step="10" value="300" oninput="updateSize(this)">
-                                                        </div>
-                                                        <div class="col-sm-2"><span id="imageSizeValue">300</span> px
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--PREVIEW-->
-                    <div class="col-sm-4 ">
-                        <div class="my-3 p-3 bg-body rounded shadow-sm sticky-top">
-                            <div id="qr-backgroudcolor" class="text-center">
-                                <img id="qr-result" style="max-width: 100%; width: 100; height: 100;"
-                                    alt="QR Code example">
-
-                                <div class="d-flex justify-content-center">
-                                    <div id="qr-code-loader" class="spinner-border text-success" role="status"
-                                        style="width: 5rem; height: 5rem; display: none;">
-                                        <span class="visually-hidden">Loading...</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <hr>
-
-                            <!--Download Button-->
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button"
-                                    class="btn btn-primary btn-lg rounded-0 w-100 border-0 app-main-color"
-                                    onclick="createQR(true)">Download</button>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary btn-lg dropdown-toggle rounded-0 w-100 border-0"
-                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"
-                                                onclick="selectQRExt(this, 'jpeg')">JPEG</a></li>
-                                        <li><a class="dropdown-item" href="#" onclick="selectQRExt(this, 'png')">PNG</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="#" onclick="selectQRExt(this, 'svg')">SVG</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="#"
-                                                onclick="selectQRExt(this, 'webp')">WEBP</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="col-sm">
+                    <p class="lead">
+                        <a href="/barcode" class="btn btn-lg btn-secondary fw-bold border-white bg-white">BARCODE</a>
+                    </p>
                 </div>
             </div>
-        </div>
-        </div>
 
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/qr-code-styling.js"></script>
-    <script type="text/javascript" src="assets/js/QR.js"></script>
+        </main>
 
-    <script type="module">
-    //    // Import the functions you need from the SDKs you need
-    //    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-    //    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
-    //    // TODO: Add SDKs for Firebase products that you want to use
-    //    // https://firebase.google.com/docs/web/setup#available-libraries
-//
-    //    // Your web app's Firebase configuration
-    //    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    //    const firebaseConfig = {
-    //        apiKey: "AIzaSyCiYf__dK_2gD61QGmNBw1LJaj_-S2PzEM",
-    //        authDomain: "super-qr-38b86.firebaseapp.com",
-    //        projectId: "super-qr-38b86",
-    //        storageBucket: "super-qr-38b86.appspot.com",
-    //        messagingSenderId: "783046485607",
-    //        appId: "1:783046485607:web:91f7d32e0c961a6f4f96c2",
-    //        measurementId: "G-RR8R4J6SEQ"
-    //    };
-//
-    //    // Initialize Firebase
-    //    const app = initializeApp(firebaseConfig);
-    //    const analytics = getAnalytics(app);
+        <footer class="mt-auto text-white-50">
+            <a href="https://code-creator.net/" class="text-white">code-creator.net</a>
+        </footer>
+    </div>
 
-    </script>
 
 
 </body>

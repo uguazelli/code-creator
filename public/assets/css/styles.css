@@ -36,7 +36,7 @@
 }
 
 .material-icons.blue700 {
-    color: #3700B3;
+    color: #264653;
 }
 
 .material-icons.green700 {
@@ -49,4 +49,24 @@
 
 .material-icons.red700 {
     color: #E30425;
+}
+
+.panel-heading {
+    padding: 5px;
+}
+
+.accordion-button {
+    background-color:  #FFFFFF;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:  #FFFFFF;
+    box-shadow: none;
+    color: #212529;
+}
+
+.accordion-button:focus{
+    background-color:  #FFFFFF;
+    box-shadow: none;
 }
