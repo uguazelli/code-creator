@@ -83,7 +83,7 @@
                                         <div class="accordion-body">
                                             <label class="form-label">Enter a URL below</label>
                                             <input type="text" id="qrData" class="form-control" oninput="updateQR(this)"
-                                                placeholder="www.super-qr.com">
+                                                placeholder="www.code-creator.net">
                                         </div>
                                     </div>
                                 </div>
@@ -294,9 +294,10 @@
                                                         <select class="form-select"
                                                             onchange="setQRStyle('cornersSquareType', this.value)"
                                                             aria-label="Default select example">
-                                                            <option value="square" selected>Square</option>
+                                                            <option value="square">Square</option>
                                                             <option value="dots">Dots</option>
-                                                            <option value="extra-rounded">Extra Roundend</option>
+                                                            <option value="extra-rounded" selected>Extra Roundend
+                                                            </option>
 
                                                         </select>
                                                     </div>
@@ -309,8 +310,8 @@
                                                         <select class="form-select"
                                                             onchange="setQRStyle('insideCornerStyle', this.value)"
                                                             aria-label="Default select example">
-                                                            <option value="square" selected>Square</option>
-                                                            <option value="dots">Dots</option>
+                                                            <option value="square">Square</option>
+                                                            <option value="dots" selected>Dots</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -347,7 +348,7 @@
                                                         <div class="col-6">
                                                             <label for="color" class="form-label">Main Color</label>
                                                             <input type="color" class="form-control form-control-color"
-                                                                oninput="updateQR(this)" id="frontColor" value="#1977F3"
+                                                                oninput="updateQR(this)" id="frontColor" value="#1E6674"
                                                                 title="Choose your color">
                                                         </div>
                                                         <div class="col-6">
@@ -365,14 +366,14 @@
                                                             <label for="color" class="form-label">Corner Color</label>
                                                             <input type="color" class="form-control form-control-color"
                                                                 oninput="updateQR(this)" id="cornerColor"
-                                                                value="#0e2e62" title="Choose your color">
+                                                                value="#A28E11" title="Choose your color">
                                                         </div>
                                                         <div class="col-6">
                                                             <label for="backgroudcolor" class="form-label">Corner Dot
                                                                 Color</label>
                                                             <input type="color" class="form-control form-control-color"
                                                                 oninput="updateQR(this)" id="insideCornerColor"
-                                                                value="#a70606" title="Choose your color">
+                                                                value="#1E6674" title="Choose your color">
                                                         </div>
                                                     </div>
 
