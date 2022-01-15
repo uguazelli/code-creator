@@ -1,14 +1,14 @@
 class QR {
     constructor() {
-      this.qrData = "www.facebook.com";
-      this.image = "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg";
-      this.frontColor = "#1977F3";
+      this.qrData = "www.code-creator.net";
+      this.image = "assets/images/qr-code.png";
+      this.frontColor = "#1E6674";
       this.backColor = "#ffffff";
-      this.cornerColor = "#0e2e62";
+      this.cornerColor = "#A28E11";
       this.dotsOptionsType = "dots";
-      this.cornersSquareType = "square";
-      this.insideCornerStyle ="square";
-      this.insideCornerColor = "#a70606";
+      this.cornersSquareType = "extra-rounded";
+      this.insideCornerStyle ="dots";
+      this.insideCornerColor = "#1E6674";
       this.width = 300;
       this.height = 300;
       this.ext = "png";
@@ -19,7 +19,7 @@ class QR {
   }
 
 
-
+1E6674
 
 
   var selectedTab = "url-tab";
