@@ -1,0 +1,512 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<nav>
+    <div class="nav nav-tabs navbar-dark app-main-color" id="nav-tab" role="tablist">
+        <button class="nav-link nav-tab-link active" id="url-tab" onClick="showQRTab(this.id)">URL</button>
+        <button class="nav-link nav-tab-link" id="text-tab" onClick="showQRTab(this.id)">TEXT</button>
+        <button class="nav-link nav-tab-link" id="email-tab" onClick="showQRTab(this.id)">EMAIL</button>
+        <button class="nav-link nav-tab-link" id="phone-tab" onClick="showQRTab(this.id)">PHONE</button>
+        <button class="nav-link nav-tab-link" id="sms-tab" onClick="showQRTab(this.id)">SMS</button>
+        <button class="nav-link nav-tab-link" id="wifi-tab" onClick="showQRTab(this.id)">WIFI</button>
+        <!--<button class="nav-link nav-tab-link" id="calendar-tab" onClick="showQRTab(this.id)">CALENDAR</button>-->
+    </div>
+</nav>
+
+<div>
+    <!--TABS-->
+    <div class="tab-pane fade show active">
+        <div class="row">
+            <div class="col-sm-8 my-3 p-3 bg-body rounded shadow-sm">
+                <h2 class="border-bottom pb-2 mb-0">QR Code Builder</h2>
+
+                <!--URL TAB-->
+                <div class="mb-3 row tab-change-content" id="url-tab-content" style="display: flex;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">travel_explore</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingURL">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseURL">
+                                    URL
+                                </button>
+                            </h2>
+                            <div id="collapseURL" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <label class="form-label">Enter a URL below</label>
+                                    <input type="text" id="urlUpload" class="form-control"
+                                        placeholder="www.qr-tron.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--TEXT TAB-->
+                <div class="mb-3 row tab-change-content" id="text-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">description</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingText">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseText">
+                                    TEXT
+                                </button>
+                            </h2>
+                            <div id="collapseText" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <label class="form-label">Enter a TEXT below</label>
+                                    <textarea class="form-control" placeholder="Somenting amazing!!!"
+                                        id="textUpload"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--EMAIL TAB-->
+                <div class="mb-3 row tab-change-content" id="email-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">email</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingText">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEmail">
+                                    EMAIL
+                                </button>
+                            </h2>
+                            <div id="collapseEmail" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email address to:</label>
+                                        <input type="email" class="form-control" id="emailTO"
+                                            placeholder="name@example.com">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Subject:</label>
+                                        <input type="text" class="form-control" id="emailSubject">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Message:</label>
+                                        <textarea class="form-control" id="emailMessage" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PHONE TAB-->
+                <div class="mb-3 row tab-change-content" id="phone-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">call</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingURL">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePhone">
+                                    URL
+                                </button>
+                            </h2>
+                            <div id="collapsePhone" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <label class="form-label">Enter a phone number</label>
+                                    <input type="phone" id="phoneUpload" class="form-control"
+                                        placeholder="+1 555 963 1234">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--SMS TAB-->
+                <div class="mb-3 row tab-change-content" id="sms-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">textsms</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingURL">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSMS">
+                                    SMS
+                                </button>
+                            </h2>
+                            <div id="collapseSMS" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone number</label>
+                                        <input type="phone" id="SMSPhone" class="form-control"
+                                            placeholder="+1 555 963 1234">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Message</label>
+                                        <input type="text" id="SMSMessage" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--WIFI TAB-->
+                <div class="mb-3 row tab-change-content" id="wifi-tab-content" style="display: none;">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 blue700">call</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingWIFI">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWifi">
+                                    WIFI
+                                </button>
+                            </h2>
+                            <div id="collapseWifi" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Wireless SSID</label>
+                                        <input type="text" id="ssid" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" id="wifi-password" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Encryption</label>
+                                        <select id="wifi-encryption" class="form-select"
+                                            aria-label="Default select example">
+                                            <option value="WPA">WPA</option>
+                                            <option value="WPE">WEP</option>
+                                            <option value="nyanpass">No Encryption</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <!--COLOR TAB-->
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 green700">palette</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingColor">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseColor">
+                                    Colors
+                                </button>
+                            </h2>
+                            <div id="collapseColor" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <label class="form-label">Select the QR Code's colors</label>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <label for="color" class="form-label">Main Color</label>
+                                            <input type="color" class="form-control form-control-color" id="frontcolor"
+                                                value="#000000" title="Choose your color">
+                                        </div>
+                                        <div class="col-sm">
+                                            <label for="backgroudcolor" class="form-label">Background Color</label>
+                                            <input type="color" class="form-control form-control-color"
+                                                id="backgroudcolor" value="#FFFFFF" title="Choose your color">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--FILE UPLOAD TAB-->
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 red700">image</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingLogo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLogo">
+                                    Logo
+                                </button>
+                            </h2>
+                            <div id="collapseLogo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <label for="formFile" class="form-label">Choose a image to add</label>
+                                    <input class="form-control" type="file" id="fileupload">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--CONFIGURATION TAB-->
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">
+                        <span class="material-icons md-48 orange700">settings_suggest</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="headingConfiguration">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseConfiguration">
+                                    Configuration
+                                </button>
+                            </h2>
+                            <div id="collapseConfiguration" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <label class="form-label">Chose the style</label>
+                                    <div class="row">
+                                        <div id="squaremodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3 border border-5 border-success">
+                                            <img src="/static/assets/images/squaremodule.webp" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                        <div id="gappedmodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/gappedmodule.webp" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                        <div id="circlemodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/circlemodule.webp" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="roundedmodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/roundedmodule.webp" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                        <div id="verticalbarmodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/verticalbarmodule.webp"
+                                                style="max-width: 100%;" alt="">
+                                        </div>
+                                        <div id="horizontalbarmodule" onclick="selectModule(this.id)"
+                                            class="qrmodule col-sm-4 p-3">
+                                            <img src="/static/assets/images/horizontalbarmodule.webp"
+                                                style="max-width: 100%;" alt="">
+                                        </div>
+                                    </div>
+                                    <!--
+                                    Color Mask
+                                    <div class="row">
+                                        <div id="solidfill" onclick="selectModuleMask(this.id)"
+                                            class="qrmodulemask col-sm-4 p-3">
+                                            <img src="/static/assets/images/solidfill.webp" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                        <div id="radialgradiant" onclick="selectModuleMask(this.id)"
+                                            class="qrmodulemask col-sm-4 p-3">
+                                            <img src="/static/assets/images/radialgradiant.webp" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                        <div id="squaregradiant" onclick="selectModuleMask(this.id)"
+                                            class="qrmodulemask col-sm-4 p-3">
+                                            <img src="/static/assets/images/squaregradiant.webp" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="horizontalgradiant" onclick="selectModuleMask(this.id)"
+                                            class="qrmodulemask col-sm-4 p-3">
+                                            <img src="/static/assets/images/horizontalgradiant.webp"
+                                                style="max-width: 100%;" alt="">
+                                        </div>
+                                        <div id="verticalgradiant" onclick="selectModuleMask(this.id)"
+                                            class="qrmodulemask col-sm-4 p-3">
+                                            <img src="/static/assets/images/verticalgradiant.webp"
+                                                style="max-width: 100%;" alt="">
+                                        </div>
+                                        <div id="imagecolor" onclick="selectModuleMask(this.id)"
+                                            class="qrmodulemask col-sm-4 p-3">
+                                            <img src="/static/assets/images/imagecolor.webp" style="max-width: 100%;"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--PREVIEW-->
+            <div class="col-sm-4">
+                <div class="my-3 p-3 bg-body rounded shadow-sm">
+                    <div id="qr-backgroudcolor">
+                        <img id="qr-result" src="/static/assets/qr.webp"
+                            style="max-width: 100%; width: 100; height: 100;" alt="QR Code example">
+
+                        <div class="d-flex justify-content-center">
+                            <div id="qr-code-loader" class="spinner-border text-success" role="status"
+                                style="width: 5rem; height: 5rem; display: none;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <!--Send Button-->
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-primary btn-lg rounded-0 w-100 border-0 app-main-color"
+                            onclick="createQR()">Generate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var module = "squaremodule";
+    var modulemask = "solidfill";
+    var selectedTab = "url-tab";
+    var urlUpload = document.getElementById("urlUpload");
+    var text = "QR CODE FAILED";
+    var fileUpload = document.getElementById("fileupload");
+    var frontcolor = document.getElementById("frontcolor");
+    var backgroudcolor = document.getElementById("backgroudcolor");
+
+
+    function selectModule(id) {
+        module = id;
+        for (let element of document.getElementsByClassName("qrmodule")) {
+            element.classList.remove("border", "border-success", "border-5");
+        }
+        document.getElementById(id).classList.add("border", "border-success", "border-5");
+    }
+
+
+
+    function selectModuleMask(id) {
+        modulemask = id;
+        for (let element of document.getElementsByClassName("qrmodulemask")) {
+            element.classList.remove("border", "border-primary", "border-5");
+        }
+        document.getElementById(id).classList.add("border", "border-primary", "border-5");
+    }
+
+
+
+    function showQRTab(id) {
+        selectedTab = id;
+        for (let element of document.getElementsByClassName("nav-tab-link")) {
+            element.classList.remove("active");
+        }
+        document.getElementById(id).classList.add("active")
+
+        for (let element of document.getElementsByClassName("tab-change-content")) {
+            element.style.display = "none";
+        }
+        document.getElementById(id + "-content").style.display = "flex";
+    }
+
+
+
+    async function createQR() {
+        var qrResult = document.getElementById("qr-result");
+        var qrCodeLoader = document.getElementById("qr-code-loader");
+        qrResult.style.display = "none";
+        qrCodeLoader.style.display = "flex";
+
+        if (selectedTab == "url-tab") {
+            text = document.getElementById("urlUpload").value;
+
+        } else if (selectedTab == "text-tab") {
+            text = document.getElementById("textUpload").value;
+
+        } else if (selectedTab == "email-tab") {
+            emailTO = document.getElementById("emailTO").value;
+            emailSubject = document.getElementById("emailSubject").value;
+            emailMessage = document.getElementById("emailMessage").value;
+            text = '<a href="mailto:' + emailTO + '?'
+            text += 'subject=' + emailSubject.replace(/ /g, '%20')
+            text += '&body=' + emailMessage.replace(/ /g, '%20') + '">Send Email</a>'
+
+        } else if (selectedTab == "phone-tab") {
+            phone = document.getElementById("phoneUpload").value;
+            text = '<a href="tel:'
+            text += phone.replace(/ /g, '')
+            text += '">'
+            text += phone
+            text += '</a>'
+
+        } else if (selectedTab == "sms-tab") {
+            phone = document.getElementById("SMSPhone").value;
+            message = document.getElementById("SMSMessage").value;
+            text = '<a href="sms:'
+            text += phone.replace(/ /g, '')
+            text += '&body='
+            text += message.replace(/ /g, '%20')
+            text += '">'
+            text += phone
+            text += '</a>'
+
+        } else if (selectedTab == "wifi-tab") {
+            ssid = document.getElementById("ssid").value;
+            password = document.getElementById("wifi-password").value;
+            type = document.getElementById("wifi-encryption").value;
+            text = 'WIFI:T:' + type + ';S:' + ssid + ';P:' + password + ';;';
+        }
+
+        else {
+            text = "QR CODE FAILED";
+        }
+
+        console.log(text)
+
+        let formData = new FormData();
+        formData.append("text", text);
+        formData.append("file", fileUpload.files[0]);
+        formData.append("frontcolor", frontcolor.value);
+        formData.append("backgroudcolor", backgroudcolor.value);
+        formData.append("module", module);
+        formData.append("modulemask", modulemask)
+
+        fetchParams = { method: "POST", body: formData }
+
+        await fetch("/", fetchParams)
+            .then((res) => res.blob())
+            .then((data) => {
+                let a = document.createElement("a");
+                a.href = window.URL.createObjectURL(data);
+                document.getElementById("qr-result").src = a.href;
+                a.download = "result.png";
+                a.click();
+            })
+            .catch((error) => console.log(error))
+            .finally(() => {
+                qrCodeLoader.style.display = "none";
+                qrResult.style.display = "flex";
+            })
+    }
+
+
+</script>
+
+
+{% endblock %}

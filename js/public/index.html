@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free QR Code, Barcode generator">
+    <meta name="author" content="Ugo Guazelli">
+    <title>Code Creator</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDgFyCLY7sk5WcXp6SikpWQ_o5lvMqtz-0",
+            authDomain: "code-creator-1.firebaseapp.com",
+            projectId: "code-creator-1",
+            storageBucket: "code-creator-1.appspot.com",
+            messagingSenderId: "267716616595",
+            appId: "1:267716616595:web:6083f8d6e4ccf7c5458866",
+            measurementId: "G-JVME6NY3C3"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-white ">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">code-creator.net</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/qrcode.html">QR Code</a>
+                    <a class="nav-link" href="/barcode.html">Barcode</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="px-3">
+            <h1>Free creator</h1>
+            <p class="lead">Create QR codes and Bar code for free.</p>
+
+            <select id="selectOptions" class="form-select" aria-label="Default select example">
+                <option value="#" selected>Select a option</option>
+                <option value="/qrcode.html">QRCODE CREATOR</option>
+                <option value="/barcode.html">BARCODE CREATOR</option>
+            </select>
+        </main>
+        <footer class="mt-auto text-white-50">
+            <a href="https://code-creator.net/" class="text-white">code-creator.net</a>
+        </footer>
+    </div>
+
+    <script>
+        const slct = document.querySelector('#selectOptions')
+        slct.onchange = () => window.location.href = slct.value;
+    </script>
+</body>
+
+</html>
